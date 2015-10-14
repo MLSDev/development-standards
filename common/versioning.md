@@ -110,4 +110,4 @@ Also, update (increment) ```versionCode``` each time you update version number.
 
 ## References
 
-[Semantic Versioning 2.0.0](http://semver.org/)
+* [Semantic Versioning 2.0.0](http://semver.org/)

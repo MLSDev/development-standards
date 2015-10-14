@@ -7,7 +7,7 @@
 1. [Personal Data Security](#personal-data-security)
 1. [Non-stable Components](#non-stable-components)
 1. [Deprecated API](#deprecated-api)
-1. [Don’t reinvent the wheel](#don-t-reinvent-the-wheel)
+1. [Don’t reinvent the wheel](#dont-reinvent-the-wheel)
 1. [Licenses](#licenses)
 1. [Networking](#networking)
 1. [Source Code Management](#source-code-management)
@@ -29,7 +29,7 @@
 * Use Git for source control
 * Use Jenkins for Continuous Integration
 * Track product versions
-* Perform [Code Review](https://github.com/MLSDev/development-standards/blob/master/common/code-review.md) on project start and on-going, once per two weeks
+* Perform Code Review on project start and on-going, once per two weeks
 
 _Find more details about each point below._
 
@@ -118,7 +118,7 @@ On the other hand, think twice before using the third-party component:
 
 ## Licenses
 
-If you are going to use a third-party component in your project, check its license first. You can use a component with permissive type of license with no doubts. For other licenses, discuss and agree the usage of component with Project Manager and Client.
+If you are going to use a third-party component in your project, check its license first. You can use a component with permissive type of license (e.g. BSD, MIT, Apache) with no doubts. For other licenses, discuss and agree the usage of component with Project Manager and Client.
 
 Useful web site: http://choosealicense.com/
 
@@ -170,16 +170,18 @@ Minimum development efforts required to add JSON support to a project. JSON supp
 
 ## Source Code Management
 
-We use Git for source code management. **Please read about the practices we follow in a [Git](https://github.com/MLSDev/development-standards/blob/master/common/git.md) section of this document.**
+We use Git for source code management. 
 
-We have a Gitlab-powered server to keep projects we develop for our clients:
+**Please read about the practices we follow in a [Git](https://github.com/MLSDev/development-standards/blob/master/common/git.md) section of this document.**
+
+We have a [GitLab](https://about.gitlab.com/)-powered server to keep projects we develop for our clients:
 * http://git.mlsdev.com
 
-We have a Github account for open-source projects: 
+We have a GitHub account for open-source projects: 
 * https://github.com/MLSDev
 
-We can work with client's repositories upon request. We have experience with Bitbutcket and Github repository hostings and
-Subversion and Mercurial SCMs.
+We can work with client's repositories upon request. We have experience with Bitbutcket and GitHub repository hostings and
+CVS, Subversion and Mercurial SCMs.
 
 
 ## Continuous Integration
@@ -222,3 +224,10 @@ Script is taken from here: https://github.com/andreafabrizi/Dropbox-Uploader
 ## Product Versioning
 
 Track product version numbers and keep them up-to-date. See [Versioning](https://github.com/MLSDev/development-standards/blob/master/common/versioning.md) section for details.
+
+
+## Code Review
+
+Code Review should be performed for every project on regular basis. 
+
+**Please read about our Code Review process [here](https://github.com/MLSDev/development-standards/blob/master/common/code-review.md).**
