@@ -11,7 +11,7 @@
 1. [Common](/common/common.md)
 1. Platform-specific: 
     * iOS
-    * [Android](/platform/android)
+    * [Android](/platform/android/android.md)
     * Front-end
     * Back-end
 1. [Design Requirements](/common/design-requirements.md)

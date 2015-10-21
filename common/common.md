@@ -7,7 +7,7 @@
 1. [Personal Data Security](#personal-data-security)
 1. [Non-stable Components](#non-stable-components)
 1. [Deprecated API](#deprecated-api)
-1. [Don’t reinvent the wheel](#dont-reinvent-the-wheel)
+1. [Don’t Reinvent the wheel](#dont-reinvent-the-wheel)
 1. [Don't Use Outdated Source Components](#dont-use-outdated-source-components)
 1. [Licenses](#licenses)
 1. [Networking](#networking)

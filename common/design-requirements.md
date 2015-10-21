@@ -57,6 +57,8 @@ For background images we support these resolutions:
 * 1242x2208 - iPhone 6 Plus
 * 1536x2048 - iPad
 
+http://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
+
 
 ## Android
 
