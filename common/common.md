@@ -8,6 +8,7 @@
 1. [Non-stable Components](#non-stable-components)
 1. [Deprecated API](#deprecated-api)
 1. [Don’t reinvent the wheel](#dont-reinvent-the-wheel)
+1. [Don't Use Outdated Source Components](#dont-use-outdated-source-components)
 1. [Licenses](#licenses)
 1. [Networking](#networking)
 1. [Source Code Management](#source-code-management)
@@ -18,11 +19,12 @@
 
 ## In a nutshell
 
-* Provide the best possible user experience
+* Provide the best possible User Experience
 * Handle errors and exceptions carefully
 * Take user personal data security into account
 * Never use non-stable components in production code
 * Never use deprecated API
+* Never use outdated components
 * Don’t reinvent the wheel
 * Check licenses of third-party components
 * Use industry standard technologies and and follow best practices for networking
@@ -36,6 +38,7 @@ _Find more details about each point below._
 
 ## User Experience
 
+* Follow platform-specific User Interface Guidelines
 * Never block User Interface of your app:
     * perform network requests in background
     * do all database work in background
@@ -47,7 +50,7 @@ _Find more details about each point below._
 
 Try to cover all the critical cases when you write error handling code.
 
-For instance, handle not only ```HTTP 200 OK``` response status, take care of 401, 403, 404, 500-504 and [others](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+For instance, handle not only `HTTP 200 OK` response status, take care of 401, 403, 404, 500-504 and [others](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
 
 
 ## Exception Handling
@@ -85,7 +88,7 @@ Good:
 ```
 
 
-## Personal data security
+## Personal Data Security
 
 Never store user's login credentials, credit card details and other potentially vulnerable personal information on mobile devices or in web browser local storage.
 
@@ -107,13 +110,22 @@ You can use non-stable versions for research projects, proof of concept, or your
 Never use API classes, methods or functions marked as _“Deprecated”_.
 
 
-## Don’t reinvent the wheel
+## Don’t Reinvent The Wheel
 
 Before start to work on new non-trivial problem, check if the solution already available. Do not hesitate to use solutions from your teammates or third-party components, libraries and frameworks (either open-source or proprietary).
 
 On the other hand, think twice before using the third-party component:
 * is it good enough or poorly designed/written?
 * isn't it an overkill/redundant?
+
+
+## Don't Use Outdated Source Components
+
+Don't use frameworks, libraries, SDKs and other source code which is outdated or does not have active support community. 
+
+For instance, don't use [CanCan](https://github.com/CanCanCommunity/cancancan) gem which is not supported anymore. Use [CanCanCan](https://github.com/CanCanCommunity/cancancan) instead.
+
+Another example. For Dependency Injection in Android, don't use outdated [Dagger 1](http://square.github.io/dagger), use [Dagger 2](http://google.github.io/dagger/) instead.
 
 
 ## Licenses
@@ -131,7 +143,7 @@ Useful web site: http://choosealicense.com/
 * Prefer JSON to XML
 
 
-### Secured connection
+### Secured Connection
 
 For production-mode apps (both mobile and web), establish [TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security)-secured network connection.
 
@@ -140,7 +152,7 @@ For production-mode apps (both mobile and web), establish [TLS](https://en.wikip
 
 Never use HTTP Basic Authentication or other authentication methods that transfer credentials as a plain text.
 
-Use industry standard authentication methods: at least HTTP Digest Authentication, OAuth 3.0 is preferred.
+Use industry standard authentication methods: at least HTTP Digest Authentication, OAuth 2.0 is preferred.
 
 
 ### RESTful Web Services
@@ -161,7 +173,7 @@ More info:
 
 ### JSON vs. XML
 
-JSON format is simpler than XML. 
+[JSON](http://json.org) format is simpler than XML. 
 
 JSON serialization and parsing is supported on all platforms we develop apps for, so it is good for communication between our apps.
 
@@ -172,7 +184,7 @@ Minimum development efforts required to add JSON support to a project. JSON supp
 
 We use Git for source code management. 
 
-**Please read about the practices we follow in a [Git](https://github.com/MLSDev/development-standards/blob/master/common/git.md) section of this document.**
+**Please read about the practices we follow in a [Git](/common/git.md) section of this document.**
 
 We have a [GitLab](https://about.gitlab.com/)-powered server to keep projects we develop for our clients:
 * http://git.mlsdev.com
@@ -205,7 +217,7 @@ Our servers:
 
 ### Jenkins + Dropbox
 
-If the application build file (IPA, APK etc) is too large to send by email, use ```dropbox_uploader.sh``` script that is already located on our Jenkins servers. 
+If the application build file (IPA, APK etc) is too large to send by email, use `dropbox_uploader.sh` script that is already installed on our Jenkins servers. 
 
 Add _“Execute Shell”_ build step to the configuration:
 
@@ -215,19 +227,19 @@ ${JENKINS_HOME}/dropbox_uploader.sh upload path_to_build_file dropbox_destinatio
 
 where
 
-* ```path_to_build_file``` - path to the app build
-* ```dropbox_destination_path``` - path to a directory in MLSDev Dropbox account, where you want a build to be uploaded.
+* `path_to_build_file` - path to the app build
+* `dropbox_destination_path` - path to a directory in MLSDev Dropbox account, where you want a build to be uploaded.
 
 Script is taken from here: https://github.com/andreafabrizi/Dropbox-Uploader
 
 
 ## Product Versioning
 
-Track product version numbers and keep them up-to-date. See [Versioning](https://github.com/MLSDev/development-standards/blob/master/common/versioning.md) section for details.
+Track product version numbers and keep them up-to-date. See [Versioning](/common/versioning.md) section for details.
 
 
 ## Code Review
 
 Code Review should be performed for every project on regular basis. 
 
-**Please read about our Code Review process [here](https://github.com/MLSDev/development-standards/blob/master/common/code-review.md).**
+**Please read about our Code Review process [here](/common/code-review.md).**
