@@ -164,11 +164,12 @@ If you are web developer, don’t reinvent the square wheel - develop RESTful we
 If you are not web developer - don’t hesitate to tell the web developer to not reinvent the square wheel if one proposes something weird instead of RESTful web services.
 
 More info:
-* http://en.wikipedia.org/wiki/Representational_state_transfer
-* http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
-* http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
-* http://en.wikipedia.org/wiki/Create,_read,_update_and_delete
-* http://tools.ietf.org/html/rfc2616
+* REST: 
+    * http://en.wikipedia.org/wiki/Representational_state_transfer
+    * http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+    * http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
+* CRUD: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete
+* HTTP: http://tools.ietf.org/html/rfc2616
 
 
 ### JSON vs. XML
