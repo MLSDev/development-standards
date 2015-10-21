@@ -1,18 +1,19 @@
 # Android 
 
 1. [Platform Versions](#platform-versions)
-1. [Development tools](#development-tools)
+1. [Development Tools](#development-tools)
 1. [User Interface](#user-interface)
 1. [Coding Conventions](#coding-conventions)
 1. [Best Practices](#best-practices)
 1. [.gitignore](#gitignore)
-1. [Test-Driven development](#test-driven-development)
-1. [Preferred libraries and frameworks](#preferred-libraries-and-frameworks)
+1. [Test-Driven Development](#test-driven-development)
+1. [Preferred Libraries And Frameworks](#preferred-libraries-and-frameworks)
 1. [Location](#location)
 1. [Dependency Management](#dependency-management)
 1. [Project Environments](#project-environments)
 1. [Release Key](#release-key)
 1. [Graphic Assets](#graphic-assets)
+1. [Useful Links](#useful-links)
 
 
 ## Platform Versions
@@ -58,7 +59,7 @@ Use Android Studio for auto formatting.
 * Use `SyncAdapters` (more info [here](http://habrahabr.ru/company/e-Legion/blog/206210/) and [here](http://habrahabr.ru/company/e-Legion/blog/216857/))
 * Prefer `Services` for long-running background tasks
 * Understand the difference between `Loader` and `AsyncTask`
-* Use _Analyse->Inspect Code_ in Android Studio for static analysis of project code and XML at the end of each development cycle (Iteration, Spring, Milestone etc).  
+* Use _Analyse->Inspect Code_ in Android Studio for static analysis of project code and XML at the end of each development cycle (Iteration, Spring, Milestone etc)
 
 
 ## User Interface
@@ -84,15 +85,16 @@ Do not forget about OS temporary files (`.DS_Store` in Mac OS, `Thumbs.db` in Wi
 * Use [Spoon](http://square.github.io/spoon) for testing on multiple devices
 
 
-## Preferred Libraries and Frameworks
+## Preferred Libraries And Frameworks
 
-* Use latest stable [Retrofit](http://square.github.io/retrofit/) to access RESTful web services.
-* Use [OkHttp](http://square.github.io/okhttp/) for more flexible networking (for example, when the API is not RESTful).
-* Use [GSON](https://github.com/google/gson) for JSON serialization and parsing.
-* Use [Glide](https://github.com/bumptech/glide) or [Picasso](https://github.com/square/picasso) for image downloading, caching and displaying.
-* Use [Crashlytics](https://try.crashlytics.com) for crash logs.
-* Use [Dagger 2](http://google.github.io/dagger) for Dependency Injection.
-* Java [classes generator](http://www.jsonschema2pojo.org) by JSON scheme or JSON example. Compatible with Gson and Jackson.
+* Use latest stable [Retrofit](http://square.github.io/retrofit/) to access RESTful web services
+* [OkHttp](http://square.github.io/okhttp/) for more flexible networking (for example, when the API is not RESTful)
+* [GSON](https://github.com/google/gson) for JSON serialization and parsing
+* [Glide](https://github.com/bumptech/glide) or [Picasso](https://github.com/square/picasso) for image downloading, caching and displaying
+* [Crashlytics](https://try.crashlytics.com) for crash logs
+* [Dagger 2](http://google.github.io/dagger) for Dependency Injection
+* [RxJava](https://github.com/ReactiveX/RxJava) for asynchronous programming
+* Java [classes generator](http://www.jsonschema2pojo.org) by JSON scheme or JSON example. Compatible with Gson and Jackson
 
 
 ## Location
@@ -135,3 +137,8 @@ Debug task should include:
 * Prefer [9patch](http://developer.android.com/tools/help/draw9patch.html) graphics.
 
 More info: [MLSDev Design Requirements](/common/design-requirements.md)
+
+
+## Useful Links
+
+* [Android Weekly](http://androidweekly.net) - _subscribe to it!_
