@@ -12,7 +12,7 @@
 1. Platform-specific: 
     * iOS
     * [Android](/platform/android/android.md)
-    * Front-end
+    * [Front-end](/platform/frontend/frontend.md)
     * Back-end
 1. [Design Requirements](/common/design-requirements.md)
 1. [How we do a Code Review](/common/code-review.md)
