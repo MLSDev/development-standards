@@ -13,7 +13,7 @@
     * iOS
     * [Android](/platform/android/android.md)
     * [Front-end](/platform/frontend/frontend.md)
-    * Back-end
+    * [Back-end](/platform/backend/backend.md)
 1. [Design Requirements](/common/design-requirements.md)
 1. [How we do a Code Review](/common/code-review.md)
 1. [Working with Git](/common/git.md)
