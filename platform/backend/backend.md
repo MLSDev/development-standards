@@ -136,6 +136,7 @@ _TBD_
 ## Useful Links
 
 * [Ruby Weekly](http://rubyweekly.com) - _subscribe to it!_
+* [Green Ruby News](http://greenruby.org/)
 * [Awesome Rails](https://github.com/ekremkaraca/awesome-rails)
 * [Awesome Ruby](https://github.com/markets/awesome-ruby)
 * [Ruby Toolbox](https://www.ruby-toolbox.com)
