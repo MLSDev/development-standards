@@ -231,7 +231,7 @@ where
 * `path_to_build_file` - path to the app build
 * `dropbox_destination_path` - path to a directory in MLSDev Dropbox account, where you want a build to be uploaded.
 
-Script is taken from here: https://github.com/andreafabrizi/Dropbox-Uploader
+Script is taken from here: [Dropbox-Uploader](https://github.com/andreafabrizi/Dropbox-Uploader)
 
 
 ## Product Versioning
