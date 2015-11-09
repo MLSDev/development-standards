@@ -20,10 +20,16 @@
 
 ## Supported iOS Versions
 
-We support: 
 * iOS 8.1+
 * iOS 9.x
 
+## Supported watchOS Versions
+
+* watchOS 2.0+
+
+## Supported tvOS Versions
+
+* tvOS 9.0+
 
 ## Supported Devices
 
@@ -36,7 +42,8 @@ We support:
 * iPads:
     * iPad 2, iPad 3, iPad 4
     * iPad Air, iPad Air 2
-    * iPad Mini 1st generation, iPad Mini 2, iPad Mini 4
+    * iPad Mini 1st generation, iPad Mini Retina
+    * iPad Pro
 * iPods:
     * iPod 5th generation
     * iPod 6th generation
@@ -46,13 +53,12 @@ We support:
 
 ### Programming Languages
 
-* Swift 2.0 (preferred)
+* Swift 2 (preferred)
 * Objective-C
-
 
 ### IDE
 
-* xCode 7.0+
+* xCode 7.1+
 
 
 ### Other Tools
@@ -75,9 +81,9 @@ We support:
 
 Use [CocoaPods](https://cocoapods.org) to add third-party components (frameworks, libraries) to your project. Use frameworks, not static libraries, for dependencies. This is done by calling `use_frameworks!` method in `Podfile`.
 
-`Pods` directory is considered a build artefact, and therefore should be added to `.gitignore`. 
+`Pods` directory is considered a build artefact, and therefore should be added to `.gitignore`.
 
-`Podfile.lock` file should be committed to repository.
+`Podfile.lock` file should be committed to repository, along with .xcworkspace file.
 
 
 ## Coding Conventions
@@ -88,15 +94,15 @@ Use [CocoaPods](https://cocoapods.org) to add third-party components (frameworks
 
 ## Apple Guidelines
 
-Strictly follow these guidelines: 
-* [Apple AppStore Review Guidelines](https://developer.apple.com/app-store/review/guidelines)
+Strictly follow these guidelines:
+* [AppStore Review Guidelines](https://developer.apple.com/app-store/review/guidelines)
 * [iOS Human Interface Guidelines](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG)
-
+* [watchOS Human Interface Guidelines](https://developer.apple.com/watch/human-interface-guidelines/)
+* [tvOS Human Interface Guidelines](https://developer.apple.com/tvos/human-interface-guidelines/)
 
 ## .gitignore
 
 * https://www.gitignore.io/api/swift
-
 
 ## Test-Driven Development
 
@@ -126,7 +132,7 @@ Mocking Frameworks:
 
 ## Crash Logs
 
-Use [Crashlytics](https://try.crashlytics.com) for crash logs. 
+Use [Fabric](https://www.fabric.io) for crash logs.
 
 
 ## Preferred libraries and frameworks
