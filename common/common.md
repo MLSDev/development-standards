@@ -193,7 +193,7 @@ We have a [GitLab](https://about.gitlab.com/)-powered server to keep projects we
 We have a GitHub account for open-source projects: 
 * https://github.com/MLSDev
 
-We can work with client's repositories upon request. We have experience with Bitbucket and GitHub repository hostings and
+We can work with client's repositories upon request. We have experience with [Bitbucket](https://bitbucket.org/) and [GitHub](https://github.com/) repository hostings and
 CVS, Subversion and Mercurial SCMs.
 
 
