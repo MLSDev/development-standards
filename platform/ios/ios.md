@@ -1,6 +1,6 @@
 # iOS
 
-1. [Supported iOS Versions](#supported-ios-versions)
+1. [Supported OS Versions](#supported-os-versions)
 1. [Supported Devices](#supported-devices)
 1. [Development Tools](#development-tools)
     * [Programming Languages](#programming-languages)
@@ -17,17 +17,18 @@
 1. [Best Practices](#best-practices)
 1. [Distributing To AppStore](#distributing-to-appstore)
 
+## Supported OS Versions
 
-## Supported iOS Versions
+### iOS 
 
 * iOS 8.1+
 * iOS 9.x
 
-## Supported watchOS Versions
+### watchOS
 
 * watchOS 2.0+
 
-## Supported tvOS Versions
+### tvOS
 
 * tvOS 9.0+
 
