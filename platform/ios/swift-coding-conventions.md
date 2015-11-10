@@ -5,7 +5,7 @@
 1. [Semicolons](#semicolons)
 1. [Curly Braces](#curly-braces)
 1. [Naming](#naming)
-1. [Immutability](#variables)
+1. [Immutability](#immutability)
 1. [Access Control](#access-control)
 1. [Closures](#closures)
 1. [Objective-C runtime](#objective-c-runtime)
