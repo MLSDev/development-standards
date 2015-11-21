@@ -137,6 +137,7 @@ _TBD_
 
 * [Ruby Weekly](http://rubyweekly.com) - _subscribe to it!_
 * [Green Ruby News](http://greenruby.org/)
+* [This week in Rails](https://rails-weekly.ongoodbits.com/)
 * [Awesome Rails](https://github.com/ekremkaraca/awesome-rails)
 * [Awesome Ruby](https://github.com/markets/awesome-ruby)
 * [Ruby Toolbox](https://www.ruby-toolbox.com)
