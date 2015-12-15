@@ -210,8 +210,8 @@ Do not bluntly use `weak self` in every closure - figure out, where it is really
 
 ```swift
 let foo = Foo()
-foo.performStuff { [weak self, unowned foo]
-    self.method()
+foo.performStuff { [weak self, unowned foo] in
+    self?.method()
     foo.method()
 }
 ```
