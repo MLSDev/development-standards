@@ -39,7 +39,7 @@ Do not use semicolons at end of the line.
 Curly braces can be put on the same line as enclosing declaration, for example:
 
 ```swift
-if let foo != nil {
+if foo != nil {
 } else {
 
 }
