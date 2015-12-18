@@ -95,7 +95,7 @@ Never store user's login credentials, credit card details and other potentially 
 
 ## Non-stable Components
 
-Never use non-stable versions of components (SDKs, frameworks, libraries, gems, pods, jars etc) in a production code. 
+Never use non-stable versions of components (SDKs, frameworks, libraries, gems, pods, jars etc) in a production code.
 
 Non-stable versions are:
 * alpha, beta (v2.0-alpha)
@@ -121,7 +121,7 @@ On the other hand, think twice before using the third-party component:
 
 ## Don't Use Outdated Source Components
 
-Don't use frameworks, libraries, SDKs and other source code which is outdated or does not have active support community. 
+Don't use frameworks, libraries, SDKs and other source code which is outdated or does not have active support community.
 
 For instance, don't use [CanCan](https://github.com/CanCanCommunity/cancancan) gem which is not supported anymore. Use [CanCanCan](https://github.com/CanCanCommunity/cancancan) instead.
 
@@ -157,14 +157,14 @@ Use industry standard authentication methods: at least HTTP Digest Authenticatio
 
 ### RESTful Web Services
 
-REST architectural style is a standard de-facto for modern web services development. 
+REST architectural style is a standard de-facto for modern web services development.
 
-If you are web developer, don’t reinvent the square wheel - develop RESTful web services for your clients (i.e., another developers). 
+If you are web developer, don’t reinvent the square wheel - develop RESTful web services for your clients (i.e., another developers).
 
 If you are not web developer - don’t hesitate to tell the web developer to not reinvent the square wheel if one proposes something weird instead of RESTful web services.
 
 More info:
-* REST: 
+* REST:
     * http://en.wikipedia.org/wiki/Representational_state_transfer
     * http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
     * http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm
@@ -174,7 +174,7 @@ More info:
 
 ### JSON vs. XML
 
-[JSON](http://json.org) format is simpler than XML. 
+[JSON](http://json.org) format is simpler than XML.
 
 JSON serialization and parsing is supported on all platforms we develop apps for, so it is good for communication between our apps.
 
@@ -183,14 +183,14 @@ Minimum development efforts required to add JSON support to a project. JSON supp
 
 ## Source Code Management
 
-We use Git for source code management. 
+We use Git for source code management.
 
 **Please read about the practices we follow in a [Git](/common/git.md) section of this document.**
 
 We have a [GitLab](https://about.gitlab.com/)-powered server to keep projects we develop for our clients:
 * http://git.mlsdev.com
 
-We have a GitHub account for open-source projects: 
+We have a GitHub account for open-source projects:
 * https://github.com/MLSDev
 
 We can work with client's repositories upon request. We have experience with [Bitbucket](https://bitbucket.org/) and [GitHub](https://github.com/) repository hostings and
@@ -208,7 +208,7 @@ Each app of the project should have at least 2 build configurations on Jenkins:
 For more information on platform-specific set up, check the corresponding sections of this document.
 
 Our servers:
-* http://ci.mlsdev.com 
+* http://ci.mlsdev.com
     * iOS apps
 * http://android-ci.mlsdev.com
     * Android apps
@@ -218,7 +218,7 @@ Our servers:
 
 ### Jenkins + Dropbox
 
-If the application build file (IPA, APK etc) is too large to send by email, use `dropbox_uploader.sh` script that is already installed on our Jenkins servers. 
+If the application build file (IPA, APK etc) is too large to send by email, use `dropbox_uploader.sh` script that is already installed on our Jenkins servers.
 
 Add _“Execute Shell”_ build step to the configuration:
 
@@ -229,7 +229,7 @@ ${JENKINS_HOME}/dropbox_uploader.sh upload path_to_build_file dropbox_destinatio
 where
 
 * `path_to_build_file` - path to the app build
-* `dropbox_destination_path` - path to a directory in MLSDev Dropbox account, where you want a build to be uploaded.
+* `dropbox_destination_path` - path to a directory in MLSDev Dropbox account, where you want a build to be uploaded. This path should be like `Projects/<Manager's Name>/<Project Name>/Builds/<Debug or Release>/`
 
 Script is taken from [Dropbox-Uploader](https://github.com/andreafabrizi/Dropbox-Uploader)
 
@@ -241,6 +241,6 @@ Track product version numbers and keep them up-to-date. See [Versioning](/common
 
 ## Code Review
 
-Code Review should be performed for every project on regular basis. 
+Code Review should be performed for every project on regular basis.
 
 **Please read about our Code Review process [here](/common/code-review.md).**
