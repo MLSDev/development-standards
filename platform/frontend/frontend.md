@@ -84,6 +84,11 @@ _This section is not finished yet._
 * Use tags: `h1...h6`, `p` etc.
 * Use `meta` and `title` tags
 
+## Google Analytics & other third-party services
+
+Google Analytics:
+* Test account (https://sites.google.com/a/mlsdev.com/articles/developer-s-area/akkaunty#TOC-Dick-Mountain-) - create app google analytics for staging and development servers.
+* Production account provided/created by/for client
 
 ## Useful links
 * [Frontend Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) - a _LOT_ of useful links
