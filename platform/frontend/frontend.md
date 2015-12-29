@@ -87,8 +87,11 @@ _This section is not finished yet._
 ## Google Analytics & other third-party services
 
 Google Analytics:
-* Test account (https://sites.google.com/a/mlsdev.com/articles/developer-s-area/akkaunty#TOC-Dick-Mountain-) - create app google analytics for staging and development servers.
+* Test account - dev@mlsdev.com (https://sites.google.com/a/mlsdev.com/articles/developer-s-area/akkaunty#TOC-Dick-Mountain-) - create app google analytics for staging and development servers.
 * Production account provided/created by/for client
+
+Yandex Metrika:
+* To access Yandex Metrika via Google Account (dev@mlsdev.com)
 
 ## Useful links
 * [Frontend Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) - a _LOT_ of useful links
