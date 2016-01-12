@@ -9,6 +9,7 @@
 1. [Best Practices](#best-practices)
 1. [Design And Markup](#design-and-markup)
 1. [Search Engine Optimization](#search-engine-optimization)
+1. [Google Analytics & other third-party services](#google-analytics-&-other-third-party-services)
 1. [Useful Links](#useful-links)
 
 
@@ -87,7 +88,7 @@ _This section is not finished yet._
 ## Google Analytics & other third-party services
 
 Google Analytics:
-* Test account - dev@mlsdev.com (https://sites.google.com/a/mlsdev.com/articles/developer-s-area/akkaunty#TOC-Dick-Mountain-) - create app google analytics for staging and development servers.
+* Test account - dev@mlsdev.com (see on articles - accounts) - create app google analytics for staging and development servers.
 * Production account provided/created by/for client
 
 Yandex Metrika:
