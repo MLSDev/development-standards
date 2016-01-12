@@ -9,7 +9,7 @@
 1. [Best Practices](#best-practices)
 1. [Design And Markup](#design-and-markup)
 1. [Search Engine Optimization](#search-engine-optimization)
-1. [Google Analytics & other third-party services](#google-analytics-&-other-third-party-services)
+1. [Google Analytics & other third-party services](#google-analytics--other-third-party-services)
 1. [Useful Links](#useful-links)
 
 
