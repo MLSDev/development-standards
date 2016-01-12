@@ -87,6 +87,8 @@ _This section is not finished yet._
 
 ## Google Analytics & other third-party services
 
+Write ID for each server (development, staging, production) as a constant. Move the script of outside servers to run and use these constants there.
+
 Google Analytics:
 * Test account - dev@mlsdev.com (see on articles - accounts) - create app google analytics for staging and development servers.
 * Production account provided/created by/for client
