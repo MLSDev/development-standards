@@ -13,6 +13,7 @@
 1. [Project Environments](#project-environments)
 1. [Release Key](#release-key)
 1. [Graphic Assets](#graphic-assets)
+1. [ProGuard](#proguard)
 1. [Useful Links](#useful-links)
 
 
@@ -138,6 +139,18 @@ Debug task should include:
 
 More info: [MLSDev Design Requirements](/common/design-requirements.md)
 
+## ProGuard
+
+* Use [Proguard](http://developer.android.com/intl/ru/tools/help/proguard.html) tool for improving security of your application. Proguard obfuscates your code by renaming classes, fields, and methods with semantically distorted names. The result apk file is more difficult to reverse engineer. It's important to use Proguard when your application should hide authorization protocol (e.g. client_id and client_secret of OAuth).
+* Proguard tool shrinks and optimize your code which can help you remain within 65k methods.
+
+### Warning
+
+When working with legacy code it's important to know is ProGuard enabled or not. While you are making changes you should add appropriate rules into configuration file.
+
+### Warning
+
+Whenever ProGuard runs, it outputs a mapping.txt file, which shows you the original class, method, and field names mapped to their obfuscated names. You must keep mapping.txt file for every release build, otherwise you will be unable to read stack trace of crash reports.
 
 ## Useful Links
 
