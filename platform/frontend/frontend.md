@@ -15,10 +15,10 @@
 
 ## Technologies
 
-* [Node.js](https://nodejs.org/en) v4.2.1+
+* [Node.js](https://nodejs.org/en) v4.x.x (Last LTS version)
 * [npm](https://www.npmjs.com) package manager for Node.js
 * [bower](http://bower.io) package manager for web development
-* [AngularJS](https://angularjs.org) 1.4.х as main framework
+* [AngularJS](https://angularjs.org) 1.5.х as main framework
 * [Yeoman](http://yeoman.io) - scaffolding tool
 * [Jade](http://jade-lang.com) - HTML template engine
 * [Stylus](http://learnboost.github.io/stylus) - CSS preprocessor
@@ -42,7 +42,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 ## Test-Driven Development
 
-Use these frameworks: 
+Use these frameworks:
 * [Karma](http://karma-runner.github.io)
 * [Jasmine](http://jasmine.github.io)
 * [Protractor](http://angular.github.io/protractor)
@@ -69,7 +69,7 @@ Screen sizes:
 * Desktop min size: 1024x768
 * Mobile min size: 320x480
 
-We support these web browsers: 
+We support these web browsers:
 * Internet Explorer 10+
 * Latest Google Chrome
 * Latest Apple Safari
