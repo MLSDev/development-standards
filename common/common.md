@@ -199,9 +199,9 @@ CVS, Subversion and Mercurial SCMs.
 
 ## Continuous Integration
 
-We use [Jenkins](http://jenkins-ci.org/) for Continuous Integration.
+We use [Jenkins](http://jenkins-ci.org) and [GitLab CI](https://about.gitlab.com/gitlab-ci) for Continuous Integration.
 
-Each app of the project should have at least 2 build configurations on Jenkins:
+Each app of the project should have at least 2 build configurations in Continuous Integration system (either Jenkins or GitLab CI):
 * **nightly** - builds are running every night, fetching the latest source from **develop** branch of Git repository.
 * **stable** - builds are running when changes available in **master** branch of Git repository.
 
