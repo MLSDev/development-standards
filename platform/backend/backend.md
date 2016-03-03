@@ -141,3 +141,4 @@ _TBD_
 * [Awesome Rails](https://github.com/ekremkaraca/awesome-rails)
 * [Awesome Ruby](https://github.com/markets/awesome-ruby)
 * [Ruby Toolbox](https://www.ruby-toolbox.com)
+* [The 12-factor app](http://12factor.net/) - a methodology for building SaaS apps
