@@ -58,7 +58,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [Capistrano](http://capistranorb.com) for deployment
 * [dotenv](https://github.com/bkeepers/dotenv) for setting shell environment variables
 * [exception_notification](https://github.com/smartinez87/exception_notification) for error/exception notifications from server
-* [Swagger](http://swagger.io) for generating API documentation
+* [swagger-blocks](https://github.com/fotinakis/swagger-blocks) for generating API documentation in [Swagger](http://swagger.io/specification/) format
 
 
 ## Coding Conventions
