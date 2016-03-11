@@ -6,7 +6,7 @@
     * [Programming Languages](#programming-languages)
     * [IDE](#ide)
     * [Other Tools](#other-tools)
-1. [Certificates, Profiles And Devices](#certificates-profiles-and-devices)
+1. [Codesigning](#codesigning)
 1. [Dependency Management](#dependency-management)
 1. [Coding Conventions](#coding-conventions)
 1. [Apple Guidelines](#apple-guidelines)
@@ -49,34 +49,30 @@ We support:
     * iPod 5th generation
     * iPod 6th generation
 
-
 ## Development Tools
 
 ### Programming Languages
 
-* Swift 2 (preferred)
+* Swift 2.1+ (preferred)
 * Objective-C
 
 ### IDE
 
-* xCode 7.1+
-
+* xCode 7.2+
 
 ### Other Tools
 
 * [Homebrew](http://brew.sh/) for package management (not MacPorts)
 * If you need to manage Ruby environment, prefer [rbenv](https://github.com/sstephenson/rbenv) to [rvm](http://rvm.io). System Ruby is OK for iOS development needs, though.
 
-
-
-## Certificates, Profiles And Devices
+## Codesigning
 
 * Never revoke certificates yourself, ask Team Leader to do that if needed.
 * Never use _"Fix Issue"_ option of xCode when you experience any issue with certificate (but you can use it for provisioning profile issues).
 * Use MLSDev development certificate for running apps which do not use Push Notifications.
 * For testing Push Notifications use client's development certificate.
 * Follow [Provisioning Portal Naming Conventions](/platform/ios/provisioning-portal-naming-conventions.md) (profiles, certificates and devices)
-
+* Use [match](https://codesigning.guide) from [Fastlane](https://github.com/fastlane/fastlane) for generating development and distribution certificates as well as provisioning profiles. When generating certificates, specify not empty password, other way you won't be able to open certificate by tools like Knuff.
 
 ## Dependency Management
 
@@ -86,12 +82,10 @@ Use [CocoaPods](https://cocoapods.org) to add third-party components (frameworks
 
 `Podfile.lock` file should be committed to repository, along with .xcworkspace file.
 
-
 ## Coding Conventions
 
 * [Swift Coding Conventions](/platform/ios/swift-coding-conventions.md)
 * [Objective-C Coding Conventions](/platform/ios/objective-c-coding-conventions.md)
-
 
 ## Apple Guidelines
 
@@ -103,7 +97,7 @@ Strictly follow these guidelines:
 
 ## .gitignore
 
-* https://www.gitignore.io/api/swift
+https://www.gitignore.io/api/swift
 
 ## Test-Driven Development
 
@@ -113,12 +107,11 @@ Matcher Frameworks:
 * [Nimble](https://github.com/Quick/Nimble) - Swift
 * [Expecta](https://github.com/specta/expecta) - Objective-C
 
-Mocking Frameworks:
+Mocking Frameworks(Objective-C):
 * [OCMock](https://github.com/erikdoe/ocmock)
 * [OCMockito](https://github.com/jonreid/OCMockito)
 * [OHHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs)
 * [KIF](https://github.com/kif-framework/KIF) for functional tests
-
 
 ## Automated Builds
 
@@ -130,11 +123,9 @@ Mocking Frameworks:
 * Apple's Testflight is preferred service for delivering beta builds
 * There should be 2 types of builds - _nightly_ and _stable_
 
-
 ## Crash Logs
 
 Use [Fabric](https://www.fabric.io) for crash logs.
-
 
 ## Preferred libraries and frameworks
 
@@ -142,15 +133,18 @@ Use [Fabric](https://www.fabric.io) for crash logs.
 * [EasyMapping](https://github.com/EasyMapping/EasyMapping) for JSON parsing - Objective-C
 * [Alamofire](https://github.com/Alamofire/Alamofire) + [AlamofireImage](https://github.com/Alamofire/AlamofireImage) + [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) for networking and parsing - Swift
 * [CoreData](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData) for app local database (TBD: links to useful articles, about background context for example)
-* [BlocksKit](https://github.com/zwaldowski/BlocksKit) for block API
 
+## Push notifications
+
+* Use [Knuff](https://github.com/KnuffApp/Knuff) for testing push notifications. 
+* Do not store push certificates in repository. 
+* Use development certificate for debug builds and production certificate for release builds.
 
 ## Best Practices
 
 * Create app user interface in Interface Builder, using XIBs or Storyboards. Custom UIView creation in a source code files is undesirable.
 * Avoid big Storyboards. Split Storyboards into smaller ones. More than 7-8 ViewControllers in one Storyboard are unacceptable. Use Storyboard references in XCode 7 to refactor large storyboards into small ones.
-* Do not let UIViewController subclasses grow to more than 400 lines of code. More information can be found [here]().
-
+* Do not let UIViewController subclasses grow to more than 400 lines of code. Always try to keep them simple and short, preferably under 100 lines of code.
 
 ## Distributing To AppStore
 
