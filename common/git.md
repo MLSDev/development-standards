@@ -73,7 +73,9 @@ CHANGELOG should contain a history of changes from version to version, in partic
 * new features
 * fixed bugs
 
-Example:
+It is allowed to store `CHANGELOG.MD` file in Documentation folder of the project, if you have more documentation, for example - https://github.com/ReactiveX/RxSwift/tree/master/Documentation
+
+Example of `CHANGELOG.MD`:
 
 ```
 2.1.6
