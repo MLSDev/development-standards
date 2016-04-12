@@ -40,11 +40,12 @@ We support:
     * iPhone 5, iPhone 5C, iPhone 5S
     * iPhone 6, iPhone 6 Plus
     * iPhone 6s, iPhone 6s Plus
+    * iPhone SE
 * iPads:
     * iPad 2, iPad 3, iPad 4
     * iPad Air, iPad Air 2
     * iPad Mini 1st generation, iPad Mini Retina
-    * iPad Pro
+    * iPad Pro 12.9 inch, 9.7 inch
 * iPods:
     * iPod 5th generation
     * iPod 6th generation
@@ -53,12 +54,12 @@ We support:
 
 ### Programming Languages
 
-* Swift 2.1+ (preferred)
+* Swift 2.2+ (preferred)
 * Objective-C
 
 ### IDE
 
-* xCode 7.2+
+* xCode 7.3+
 
 ### Other Tools
 
