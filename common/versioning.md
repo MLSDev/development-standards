@@ -96,9 +96,21 @@ Create ```lib/<project_name>/version.rb``` file. See [Redmine source code](https
 
 ### iOS
 
-Keep ```CFBundleShortVersionString``` property up-to-date.
+Keep `CFBundleShortVersionString` property up-to-date.
 
 As a reference of good versioning approach, see https://github.com/artsy/eidolon/blob/master/fastlane/Fastfile
+
+#### Testflight
+
+Because of how Apple's Testflight works, it may require 3-5 days of external review for external tester builds, which may be very inconvenient. Which is why, if Testflight is used as builds distribution service, it is allowed to have external and internal versions. 
+
+##### External version
+
+Is set in ```CFBundleShortVersionString``` and set to 1.0.0 on start of the project. When next version is developed(e.g. 1.1.0), version number is set, and sent to external app review with the first build on first sprint of development. Sending subsequent builds with the same version does not require review.
+
+##### Internal version
+
+Is kept in CHANGELOG.MD and updated as defined in top of this document. It should also be included in `What to Test` section of TestFlight build. This version is used to set tags in git repo, when release is made.
 
 
 ### Android
