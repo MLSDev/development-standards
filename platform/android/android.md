@@ -22,9 +22,9 @@
 
 ### Min SDK Version
 
-Support Android OS versions starting from 4.0 (Ice Cream Sandwich, API Level 14). 
-Do not support older versions (2.2 Froyo, 2.3 Gingerbread, 3.x Honeycomb etc).
-
+Support Android OS versions starting from 4.1 (Jelly Bean, API Level 16). 
+Do not support older versions (2.2 Froyo, 2.3 Gingerbread, 3.x Honeycomb, 4.0.3 - 4.0.4 Ice Cream Sandwich etc).
+Check [Dashboard](http://developer.android.com/intl/ru/about/dashboards/index.html) page for information about platform versions, screen sizes and densities statistics.
 
 ### Target SDK Version
 
