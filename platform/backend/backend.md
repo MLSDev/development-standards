@@ -24,7 +24,7 @@
 
 * Ruby 2.3.x (latest stable)
 * Ruby On Rails 4.2.x (latest stable)
-* Ruby environment management: [rvm](http://rvm.io)
+* Ruby environment management: [rvm](http://rvm.io) or [rbenv](https://github.com/rbenv/rbenv)
 
 
 ### Development OS
@@ -120,7 +120,14 @@ _These tools are to be run at the end of each development cycle (Iteration, Spri
 
 ## Deployment
 
-_TBD_
+Use capistrano and rbenv with automatic ruby install:
+* Configure ruby version for project in `.ruby-version`
+* Add [capistrano-rbenv](https://github.com/capistrano/rbenv) gem
+* Add `require 'capistrano/rbenv'` to `Capfile`
+* Add `set :rbenv_ruby, File.read('.ruby-version').strip` to `config/deploy.rb`
+* Add [capistrano-rbenv-install](https://github.com/capistrano-plugins/capistrano-rbenv-install) gem
+* Add `require 'capistrano/rbenv_install'` to `Capfile`
+* `cap production deploy` will install required version ruby during deploy
 
 
 ## Load Testing
