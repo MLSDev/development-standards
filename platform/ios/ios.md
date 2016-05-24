@@ -126,7 +126,7 @@ Mocking Frameworks(Objective-C):
 
 ## Crash Logs
 
-Use [Fabric](https://www.fabric.io) for crash logs.
+Use [Fabric](https://www.fabric.io) for crash logs. Install Fabric and follow the instructions. Fabric and Crashlytics frameworks must be installed via `CocoaPods`.
 
 ## Preferred libraries and frameworks
 

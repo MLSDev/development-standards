@@ -25,10 +25,13 @@ Examples:
 com.<company name>.<CamelCased app name>
 ```
 
-Example:
+If the customer is an individual (not a company) then you can put his last name instead of `company name`.
+
+Examples:
 
 ```
 com.mlsdev.AdFox
+com.Johnson.FoxAd
 ```
 
 
