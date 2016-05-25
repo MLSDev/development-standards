@@ -15,7 +15,7 @@
 
 ## Technologies
 
-* [Node.js](https://nodejs.org/en) v4.x.x (Last LTS version)
+* [Node.js](https://nodejs.org/en) v4.x.x (LTS)
 * [npm](https://www.npmjs.com) package manager for Node.js
 * [bower](http://bower.io) package manager for web development
 * [AngularJS](https://angularjs.org) 1.5.х as main framework
@@ -39,14 +39,11 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 ## Coding Conventions
 * [CoffeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide/blob/master/README.md)
 
-
 ## Test-Driven Development
 
 Use these frameworks:
 * [Karma](http://karma-runner.github.io)
 * [Jasmine](http://jasmine.github.io)
-* [Protractor](http://angular.github.io/protractor)
-
 
 ## Preferred Libraries
 
@@ -63,14 +60,14 @@ Use these frameworks:
 
 ## Design And Markup
 
-Web site that we develop should be **responsive and adaptive** by default
+__Web sites that we develop should be *responsive and adaptive* by default.__
 
 Screen sizes:
 * Desktop min size: 1024x768
 * Mobile min size: 320x480
 
 We support these web browsers:
-* Internet Explorer 10+
+* Internet Explorer 11+
 * Latest Google Chrome
 * Latest Apple Safari
 * Latest Mozilla Firefox
@@ -87,11 +84,12 @@ _This section is not finished yet._
 
 ## Google Analytics & other third-party services
 
-Write ID for each server (development, staging, production) as a constant. Move the script of outside servers to run and use these constants there.
+Create separate third-party service ID constant for each environment (development, staging, production).
+Keep constants files out of repository.
 
 Google Analytics:
 * Test account - dev@mlsdev.com (see on articles - accounts) - create app google analytics for staging and development servers.
-* Production account provided/created by/for client
+* Production account is to be provided/created by/for client
 
 Yandex Metrika:
 * To access Yandex Metrika via Google Account (dev@mlsdev.com)
@@ -101,4 +99,5 @@ Yandex Metrika:
 * [Material Design Icons](https://materialdesignicons.com)
 * [AngularJS API Reference](https://docs.angularjs.org/api)
 * [W3C](http://w3.org)
-
+* [ngmodules.org](http://ngmodules.org) - find modules for AngularJS
+* [The Twelve-Factor App](http://12factor.net/)
