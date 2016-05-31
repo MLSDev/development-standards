@@ -12,10 +12,12 @@ Follow these practices when you work with Git:
 * Follow [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/) ([Russian translation](http://habrahabr.ru/post/106912/))
 * Try to push to remote repository after each commit in order to avoid non-synced repository state
 * Push code at least once per day
-* Prefer ```git rebase``` to ```git merge```
+* Use ```git rebase``` before using ```git merge``` if needed to have streamlined history.
+* After ```git merge``` delete unused branches on remotes.
 * Never use ```--force``` option for any Git command (except for rebase in your branch)
 * Tag commits for each app build or server app deployment, at the end of each Sprint or when the product is going to be Released (read more below).
-* There should be a ```README``` file in the root of repository (read more below)
+* If you need UI client for Git, use [SourceTree](https://www.sourcetreeapp.com)
+* There should be a ```README.md``` file in the root of repository (read more below)
 * There should be a ```CHANGELOG``` file in the root of repository (read more below)
 
 ### Tags
@@ -54,14 +56,14 @@ Tagging helps to fix bugs like “this feature worked in previous release, it st
 
 ### README
 
-In a repository root, there should be a README file, either in plain text or Markdown format.
+In a repository root, there should be a README.md file in Markdown format.
 README should contain :
 * a brief project description
 * list of technologies, platforms and frameworks used (with versions specified)
 * build instructions
 
 Examples:
-* https://github.com/DenHeadless/DTInlineDatePicker/blob/master/README.md
+* https://github.com/MLSDev/TRON/blob/master/README.md
 * https://github.com/okolodev/ios_ci/blob/master/README.md
 
 
