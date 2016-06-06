@@ -71,10 +71,13 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 ## Test-Driven Development
 
-* Use [rspec_rails](https://github.com/rspec/rspec-rails) ~> 3.0
+* Use latest versions of [rspec](https://github.com/rspec/rspec) and [rspec_rails](https://github.com/rspec/rspec-rails)
+* [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
+* [rspec-its](https://github.com/rspec/rspec-its)
+* [rspec-activemodel-mocks](https://github.com/rspec/rspec-activemodel-mocks)
+* [simplecov](https://github.com/colszowka/simplecov)
 
 Useful gems: 
-* [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
 * [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner)
 * [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails)
 
