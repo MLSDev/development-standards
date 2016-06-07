@@ -10,6 +10,7 @@
 ## Contents
 
 1. [Common](/common/common.md)
+1. [Education](/common/education.md)
 1. Platform-specific: 
     * [iOS](/platform/ios/ios.md)
     * [Android](/platform/android/android.md)
