@@ -118,6 +118,7 @@ Here is a list of must-have gems:
 * [RuboCop](https://github.com/bbatsov/rubocop) - A static code analyzer, based on the community Ruby style guide
 * [rails_best_practices](https://github.com/railsbp/rails_best_practices) - Code metric tool for Rails projects
 * [RailsRoady](https://github.com/preston/railroady) - UML diagram generation on models and controllers
+* [lol_dba](https://github.com/plentz/lol_dba) - small package of rake tasks that scan your application models and displays a list of columns that probably should be indexed
 
 _These tools are to be run at the end of each development cycle (Iteration, Sprint, Milestone, Release)_
 
