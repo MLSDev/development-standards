@@ -57,6 +57,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [Puma](http://puma.io) as Ruby web server
 * [Capistrano](http://capistranorb.com) for deployment
 * [Kaminari](https://github.com/amatsuda/kaminari) for pagination
+* [Draper](https://github.com/drapergem/draper) Decorators/View-Models for Rails Applications
 * [dotenv](https://github.com/bkeepers/dotenv) for setting shell environment variables
 * [exception_notification](https://github.com/smartinez87/exception_notification) for error/exception notifications from server
 * [swagger-blocks](https://github.com/fotinakis/swagger-blocks) for generating API documentation in [Swagger](http://swagger.io/specification/) format
