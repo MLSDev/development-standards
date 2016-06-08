@@ -58,6 +58,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [Capistrano](http://capistranorb.com) for deployment
 * [Kaminari](https://github.com/amatsuda/kaminari) for pagination
 * [Draper](https://github.com/drapergem/draper) Decorators/View-Models for Rails Applications
+* [pundit](https://github.com/elabs/pundit) Minimal authorization through OO design and pure Ruby classes
 * [dotenv](https://github.com/bkeepers/dotenv) for setting shell environment variables
 * [exception_notification](https://github.com/smartinez87/exception_notification) for error/exception notifications from server
 * [swagger-blocks](https://github.com/fotinakis/swagger-blocks) for generating API documentation in [Swagger](http://swagger.io/specification/) format
@@ -76,6 +77,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
 * [rspec-its](https://github.com/rspec/rspec-its)
 * [rspec-activemodel-mocks](https://github.com/rspec/rspec-activemodel-mocks)
+* [pundit-matchers](https://github.com/chrisalley/pundit-matchers)
 * [simplecov](https://github.com/colszowka/simplecov)
 
 Useful gems: 
