@@ -61,6 +61,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [pundit](https://github.com/elabs/pundit) Minimal authorization through OO design and pure Ruby classes
 * [dotenv](https://github.com/bkeepers/dotenv) for setting shell environment variables
 * [exception_notification](https://github.com/smartinez87/exception_notification) for error/exception notifications from server
+* [AppSignal](https://appsignal.com) better errors notification server with full debug information about each error
 * [swagger-blocks](https://github.com/fotinakis/swagger-blocks) for generating API documentation in [Swagger](http://swagger.io/specification/) format
 
 
