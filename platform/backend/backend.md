@@ -78,7 +78,6 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
 * [rspec-its](https://github.com/rspec/rspec-its)
 * [rspec-activemodel-mocks](https://github.com/rspec/rspec-activemodel-mocks)
-* [pundit-matchers](https://github.com/chrisalley/pundit-matchers)
 * [simplecov](https://github.com/colszowka/simplecov)
 
 Useful gems: 
