@@ -63,7 +63,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [exception_notification](https://github.com/smartinez87/exception_notification) for error/exception notifications from server
 * [AppSignal](https://appsignal.com) better errors notification server with full debug information about each error
 * [swagger-blocks](https://github.com/fotinakis/swagger-blocks) for generating API documentation in [Swagger](http://swagger.io/specification/) format
-* [rack-timeout](https://github.com/heroku/rack-timeout) add timeouts to rack application.
+* [rack-timeout](https://github.com/heroku/rack-timeout) add timeouts to rack applications.
 
 
 ## Coding Conventions
