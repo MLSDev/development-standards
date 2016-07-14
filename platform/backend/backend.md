@@ -78,6 +78,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 * Use latest versions of [rspec](https://github.com/rspec/rspec) and [rspec_rails](https://github.com/rspec/rspec-rails)
 * [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
+* [shoulda-callback-matchers](https://github.com/jdliss/shoulda-callback-matchers)
 * [rspec-its](https://github.com/rspec/rspec-its)
 * [rspec-activemodel-mocks](https://github.com/rspec/rspec-activemodel-mocks)
 * [simplecov](https://github.com/colszowka/simplecov)
