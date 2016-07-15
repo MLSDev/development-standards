@@ -72,6 +72,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
 * [Rails Style Guide](https://github.com/bbatsov/rails-style-guide)
 * [RSpec Best Practices](https://github.com/andreareginato/betterspecs)
+* [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
 
 
 ## Test-Driven Development
