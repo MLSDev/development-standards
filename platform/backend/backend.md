@@ -59,6 +59,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [Kaminari](https://github.com/amatsuda/kaminari) for pagination
 * [Draper](https://github.com/drapergem/draper) Decorators/View-Models for Rails Applications
 * [pundit](https://github.com/elabs/pundit) Minimal authorization through OO design and pure Ruby classes
+* [has_scope](https://github.com/plataformatec/has_scope) Map incoming controller parameters to named scopes in your resources
 * [dotenv](https://github.com/bkeepers/dotenv) for setting shell environment variables
 * [exception_notification](https://github.com/smartinez87/exception_notification) for error/exception notifications from server
 * [AppSignal](https://appsignal.com) better errors notification server with full debug information about each error
