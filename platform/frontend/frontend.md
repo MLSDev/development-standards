@@ -19,10 +19,8 @@
 * [npm](https://www.npmjs.com) package manager for Node.js
 * [bower](http://bower.io) package manager for web development
 * [AngularJS](https://angularjs.org) 1.5.х as main framework
-* [Yeoman](http://yeoman.io) - scaffolding tool
 * [Jade](http://jade-lang.com) - HTML template engine
 * [Stylus](http://learnboost.github.io/stylus) - CSS preprocessor
-* [CoffeeScript](http://coffeescript.org) - pretty JavaScript
 * [Gulp](http://gulpjs.com) - streaming build system
 
 
@@ -37,7 +35,10 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 
 ## Coding Conventions
-* [CoffeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide/blob/master/README.md)
+
+* [JavaScript Style Guide](https://github.com/airbnb/javascript)
+* [Angular ES2015 style guide](https://github.com/rwwagner90/angular-styleguide-es6) (good [article](https://www.sitepoint.com/writing-angularjs-apps-using-es6/))
+* [CoffeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide/blob/master/README.md) (for old projects)
 
 ## Test-Driven Development
 
@@ -47,6 +48,7 @@ Use these frameworks:
 
 ## Preferred Libraries
 
+* [Bluebird](http://bluebirdjs.com/)
 * [Async](https://github.com/caolan/async)
 * [EventEmitter](https://github.com/Olical/EventEmitter)
 * [Underscore](http://underscorejs.org) / [lodash](https://lodash.com)
@@ -79,8 +81,7 @@ _This section is not finished yet._
 
 * Properly setup `robots.txt` file. See [robotstxt.org](http://www.robotstxt.org)
 * Use [prerender.io](https://prerender.io)
-* Use tags: `h1...h6`, `p` etc.
-* Use `meta` and `title` tags
+* Use tags: `h1...h6`, `p`, `meta`, `title` etc.
 
 ## Google Analytics & other third-party services
 
@@ -95,6 +96,7 @@ Yandex Metrika:
 * To access Yandex Metrika via Google Account (dev@mlsdev.com)
 
 ## Useful links
+
 * [Frontend Dev Bookmarks](https://github.com/dypsilon/frontend-dev-bookmarks) - a _LOT_ of useful links
 * [Material Design Icons](https://materialdesignicons.com)
 * [AngularJS API Reference](https://docs.angularjs.org/api)
