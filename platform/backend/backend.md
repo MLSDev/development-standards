@@ -66,6 +66,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [swagger-blocks](https://github.com/fotinakis/swagger-blocks) for generating API documentation in [Swagger](http://swagger.io/specification/) format
 * [rack-timeout](https://github.com/heroku/rack-timeout) add timeouts to rack applications.
 * [rack-cors](https://github.com/cyu/rack-cors) for configuring CORS headers.
+* [lograge](https://github.com/roidrage/lograge) for production logs squshing.
 
 
 ## Coding Conventions
