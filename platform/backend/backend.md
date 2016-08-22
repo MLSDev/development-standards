@@ -18,6 +18,7 @@
 1. [Load Balancing](#load-balancing)
 1. [Load Testing](#load-testing)
 1. [Useful Links](#useful-links)
+1. [Recommended Books](#recommended-books)
 
 
 ## Technologies
@@ -157,3 +158,9 @@ _TBD_
 * [Awesome Ruby](https://github.com/markets/awesome-ruby)
 * [Ruby Toolbox](https://www.ruby-toolbox.com)
 * [The 12-factor app](http://12factor.net/) - a methodology for building SaaS apps
+
+
+## Recommended Books
+
+* [Practical Object-Oriented Design in Ruby (by Sandi Metz)](https://www.amazon.co.uk/Practical-Object-Oriented-Design-Ruby-Addison-Wesley/dp/0321721330)
+* [Eloquent Ruby (by Russ Olsen)](https://www.amazon.co.uk/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104/ref=pd_bxgy_14_img_2?ie=UTF8&refRID=HQ47S5P3BSG69ASDJH9A)
