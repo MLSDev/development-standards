@@ -85,6 +85,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [shoulda-callback-matchers](https://github.com/jdliss/shoulda-callback-matchers)
 * [rspec-its](https://github.com/rspec/rspec-its)
 * [rspec-activemodel-mocks](https://github.com/rspec/rspec-activemodel-mocks)
+* [rails-controller-testing] (https://github.com/rails/rails-controller-testing)
 * [simplecov](https://github.com/colszowka/simplecov)
 
 Useful gems: 
