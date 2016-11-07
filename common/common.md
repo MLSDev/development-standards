@@ -188,7 +188,7 @@ We use Git for source code management.
 **Please read about the practices we follow in a [Git](/common/git.md) section of this document.**
 
 We have a [GitLab](https://about.gitlab.com/)-powered server to keep projects we develop for our clients:
-* http://git.mlsdev.com
+* https://git.mlsdev.com
 
 We have a GitHub account for open-source projects:
 * https://github.com/MLSDev
