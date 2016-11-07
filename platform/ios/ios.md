@@ -21,8 +21,7 @@
 
 ### iOS 
 
-* iOS 8.1+
-* iOS 9.x
+* iOS 9.0+
 
 ### watchOS
 
@@ -40,6 +39,7 @@ We support:
     * iPhone 5, iPhone 5C, iPhone 5S
     * iPhone 6, iPhone 6 Plus
     * iPhone 6s, iPhone 6s Plus
+    * iPhone 7, iPhone 7 Plus
     * iPhone SE
 * iPads:
     * iPad 2, iPad 3, iPad 4
@@ -54,12 +54,12 @@ We support:
 
 ### Programming Languages
 
-* Swift 2.2+ (preferred)
+* Swift 3.0(preferred)
 * Objective-C
 
 ### IDE
 
-* xCode 7.3+
+* Xcode 8+
 
 ### Other Tools
 
@@ -69,7 +69,7 @@ We support:
 ## Codesigning
 
 * Never revoke certificates yourself, ask Team Leader to do that if needed.
-* Never use _"Fix Issue"_ option of xCode when you experience any issue with certificate (but you can use it for provisioning profile issues).
+* Use **manual** code-signing option in Xcode along with [Fastlane](https://github.com/fastlane/fastlane) to specify pair of code-signing certificate and provisioning profile.
 * Use MLSDev development certificate for running apps which do not use Push Notifications.
 * For testing Push Notifications use client's development certificate.
 * Follow [Provisioning Portal Naming Conventions](/platform/ios/provisioning-portal-naming-conventions.md) (profiles, certificates and devices)
@@ -143,7 +143,7 @@ Use [Fabric](https://www.fabric.io) for crash logs. Install Fabric and follow th
 
 ## Best Practices
 
-* Create app user interface in Interface Builder, using XIBs or Storyboards. Custom UIView creation in a source code files is undesirable.
+* Create app user interface in Interface Builder, using XIBs or Storyboards. Custom UIView creation in a source code files is undesirable. Use [tools and frameworks](https://github.com/MLSDev/LoadableViews) to make your views small and reusable
 * Avoid big Storyboards. Split Storyboards into smaller ones. More than 7-8 ViewControllers in one Storyboard are unacceptable. Use Storyboard references in XCode 7 to refactor large storyboards into small ones.
 * Do not let UIViewController subclasses grow to more than 400 lines of code. Always try to keep them simple and short, preferably under 100 lines of code.
 
