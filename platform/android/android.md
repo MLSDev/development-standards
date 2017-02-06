@@ -28,8 +28,8 @@ Check [Dashboard](http://developer.android.com/intl/ru/about/dashboards/index.ht
 
 ### Target SDK Version
 
-For new projects, use latest stable version of Android API (6.0.0 Marshmallow, API Level 23).
-Do not use beta versions or developer previews (e.g. API Level 20).
+For new projects, use latest stable version of Android API (7.1.1 Nougat, API Level 25).
+Do not use beta versions or developer previews.
 
 
 ## Development Tools
@@ -136,6 +136,7 @@ Debug task should include:
 
 * Require graphic designers to provide assets in all sizes (mdpi, hdpi, xhdpi, xxhdpi etc).
 * Prefer [9patch](http://developer.android.com/tools/help/draw9patch.html) graphics.
+* Prefer Multi-Density Vector Graphics.
 
 More info: [MLSDev Design Requirements](/common/design-requirements.md)
 
