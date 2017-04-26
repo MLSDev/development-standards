@@ -441,29 +441,17 @@ When picking extension file name, consider functionality you are providing. For 
 
 ## Namespacing
 
-You can use namespacing to make code usage more clear. For example, if you have notifications, that are sent in application, wrap it into external namespace:
+You can use namespacing to make code usage more clear. Until proper namespaces are added to Swift, use enums for pure namespacing purposes:
 
 ```swift
-enum Notifications {
-    static let UserSignedIn = "User signed in notification"
+enum API {
+    enum Users {
+        static func get() -> [User]
+    }
 }
 
-let notificationName = Notifications.UserSignedIn
+let users = API.Users.get()
 ```
-
-Another alternative is to have an enum of String type, like so:
-
-```swift
-enum Notifications : String
-{
-    case userProfileModelRetrieved
-    case categoriesLoaded
-    case userLoggedOut
-    case userLoggedIn
-}
-```
-
-Because it is `String` enum, you don't actually need to add String rawValue representations.
 
 ## References
 
