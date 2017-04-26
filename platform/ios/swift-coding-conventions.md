@@ -27,7 +27,7 @@ Strictly follow [Swift 3 API Design Guidelines](https://swift.org/documentation/
 
 ## Tabs and indentation
 
-* Use tabs instead of spaces. Tab = 4 spaces.
+* Use spaces instead of tabs. Use Xcode setting, that replaces tab with 4 spaces(default).
 * Always try to limit Line length to 100 characters.
 * End files with a newline
 
