@@ -102,6 +102,7 @@ Add the following lines to default Rails-generated `.gitignore` file:
 database.yml
 secrets.yml
 .idea
+coverage/
 ```
 
 
