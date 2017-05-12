@@ -67,6 +67,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [rack-timeout](https://github.com/heroku/rack-timeout) add timeouts to rack applications.
 * [rack-cors](https://github.com/cyu/rack-cors) for configuring CORS headers.
 * [lograge](https://github.com/roidrage/lograge) for production logs squshing.
+* [sidekiq](https://github.com/mperham/sidekiq) for background processing.
 
 
 ## Coding Conventions
