@@ -15,13 +15,18 @@
 
 ## Technologies
 
-* [Node.js](https://nodejs.org/en) v4.x.x (LTS)
-* [npm](https://www.npmjs.com) package manager for Node.js
-* [bower](http://bower.io) package manager for web development
-* [AngularJS](https://angularjs.org) 1.5.х as main framework
-* [Jade](http://jade-lang.com) - HTML template engine
-* [Stylus](http://learnboost.github.io/stylus) - CSS preprocessor
-* [Gulp](http://gulpjs.com) - streaming build system
+* [Node.js](https://nodejs.org/en) v6.x.x (LTS)
+* [npm](https://www.npmjs.com) package manager for Node.js (outdated)
+* [yarn](https://yarnpkg.com/) package manager for Node.js
+* [bower](http://bower.io) package manager for web development (outdated)
+* [AngularJS](https://angularjs.org) 1.5.х as main framework (outdated)
+* [Angular](https://angular.io/) 4.x.x as main framework
+* [Pug](https://pugjs.orgm) - HTML template engine
+* [Stylus](http://stylus-lang.com/) - CSS preprocessor
+* [Gulp](http://gulpjs.com) - streaming build system (outdated)
+* [Webpack](https://webpack.js.org/) 2.x.x - JavaScript module bundler
+* [Babel](https://babeljs.io/) - JavaScript compiler
+* [TypeScript](https://www.typescriptlang.org/) 2.x.x - optional types, classes, and modules to JavaScript
 
 
 ## Development OS
@@ -31,27 +36,30 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 ## IDE
 
-* [WebStorm 9](https://www.jetbrains.com/webstorm) (not required)
+* [WebStorm](https://www.jetbrains.com/webstorm) (not required)
 
 
 ## Coding Conventions
 
 * [JavaScript Style Guide](https://github.com/airbnb/javascript)
-* [Angular ES2015 style guide](https://github.com/rwwagner90/angular-styleguide-es6) (good [article](https://www.sitepoint.com/writing-angularjs-apps-using-es6/))
-* [CoffeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide/blob/master/README.md) (for old projects)
+* [Angular 1.x style guide](https://github.com/rwwagner90/angular-styleguide-es6) (good [article](https://www.sitepoint.com/writing-angularjs-apps-using-es6/))
+* [Angular 4.x style guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
+* [Stylus style guide](https://github.com/skyout/stylus-styleguide)
 
-## Test-Driven Development
+
+## Unit testing
 
 Use these frameworks:
 * [Karma](http://karma-runner.github.io)
 * [Jasmine](http://jasmine.github.io)
 
+
 ## Preferred Libraries
 
-* [Bluebird](http://bluebirdjs.com/)
-* [Async](https://github.com/caolan/async)
 * [EventEmitter](https://github.com/Olical/EventEmitter)
 * [Underscore](http://underscorejs.org) / [lodash](https://lodash.com)
+* [ui-router](https://ui-router.github.io/ng1/) 1.x - routing in AngularJS
+* [ng-file-upload](https://github.com/danialfarid/ng-file-upload) 12.x.x - Angular directive to upload files
 
 
 ## Best Practices
@@ -80,8 +88,10 @@ We support these web browsers:
 _This section is not finished yet._
 
 * Properly setup `robots.txt` file. See [robotstxt.org](http://www.robotstxt.org)
+* Generate `sitemap.xml` file. See [sitemaps.org](https://www.sitemaps.org)
 * Use [prerender.io](https://prerender.io)
-* Use tags: `h1...h6`, `p`, `meta`, `title` etc.
+* Use tags: `h1...h6`, `p`, `meta`, `title` etc. 
+
 
 ## Google Analytics & other third-party services
 
@@ -92,8 +102,6 @@ Google Analytics:
 * Test account - dev@mlsdev.com (see on articles - accounts) - create app google analytics for staging and development servers.
 * Production account is to be provided/created by/for client
 
-Yandex Metrika:
-* To access Yandex Metrika via Google Account (dev@mlsdev.com)
 
 ## Useful links
 

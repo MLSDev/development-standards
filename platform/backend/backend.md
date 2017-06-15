@@ -60,7 +60,6 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [Kaminari](https://github.com/amatsuda/kaminari) for pagination
 * [Draper](https://github.com/drapergem/draper) Decorators/View-Models for Rails Applications
 * [pundit](https://github.com/elabs/pundit) Minimal authorization through OO design and pure Ruby classes
-* [has_scope](https://github.com/plataformatec/has_scope) Map incoming controller parameters to named scopes in your resources
 * [dotenv](https://github.com/bkeepers/dotenv) for setting shell environment variables
 * [exception_notification](https://github.com/smartinez87/exception_notification) for error/exception notifications from server
 * [AppSignal](https://appsignal.com) better errors notification server with full debug information about each error
@@ -68,6 +67,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [rack-timeout](https://github.com/heroku/rack-timeout) add timeouts to rack applications.
 * [rack-cors](https://github.com/cyu/rack-cors) for configuring CORS headers.
 * [lograge](https://github.com/roidrage/lograge) for production logs squshing.
+* [sidekiq](https://github.com/mperham/sidekiq) for background processing.
 
 
 ## Coding Conventions
@@ -85,13 +85,13 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 * [shoulda-callback-matchers](https://github.com/jdliss/shoulda-callback-matchers)
 * [rspec-its](https://github.com/rspec/rspec-its)
 * [rspec-activemodel-mocks](https://github.com/rspec/rspec-activemodel-mocks)
-* [rails-controller-testing] (https://github.com/rails/rails-controller-testing)
+* [rails-controller-testing](https://github.com/rails/rails-controller-testing)
 * [simplecov](https://github.com/colszowka/simplecov)
 
 Useful gems: 
 * [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner)
 * [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails)
-
+* [has_scope](https://github.com/plataformatec/has_scope) Map incoming controller parameters to named scopes in your resources
 
 ## .gitignore
 
@@ -102,6 +102,7 @@ Add the following lines to default Rails-generated `.gitignore` file:
 database.yml
 secrets.yml
 .idea
+coverage/
 ```
 
 
