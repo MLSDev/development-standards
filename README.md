@@ -4,7 +4,7 @@
 
 *This document is updated frequently. Our practices and standards are subject to change as software development world evolve.*
 
-*Everyone who commits the updates to this document should notify their colleagues of the changes made.*
+*Everyone who commits the updates to this document should notify their colleagues of the changes made (see more in Contributing section).*
 
 
 ## Contents
@@ -19,7 +19,7 @@
 1. [How We Perform A Code Review](/common/code-review.md)
 1. [Working with Git](/common/git.md)
 1. [Version Numbering Conventions](/common/versioning.md)
-
+1. [Contributing](/CONTRIBUTING.md)
 
 ## License
 
