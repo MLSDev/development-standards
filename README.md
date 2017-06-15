@@ -20,6 +20,7 @@
 1. [Working with Git](/common/git.md)
 1. [Version Numbering Conventions](/common/versioning.md)
 1. [Contributing](/CONTRIBUTING.md)
+1. [Open Source](/common/open-source.md)
 
 ## License
 
