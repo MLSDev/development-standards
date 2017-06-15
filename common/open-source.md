@@ -28,7 +28,7 @@ Among else, we consider GitHub as a:
   * Maps, Geolocation
   * Analytics
   * Validations
-  * Simple and full-test search
+  * Simple and full-text search
   * Authentication / Authorization, JSON Web Tokens
   * I18n
   * L10n
