@@ -15,7 +15,7 @@ Among else, we consider GitHub as a:
 
 ## Our Open Source Contribution Strategy
 
-* Extract the most useful, well-turned and successful common tasks solutions (for company and community) into open source projects under the company Github Ogranization profile.
+* Extract the most useful, well-turned and successful common tasks solutions (for company and community) into open source projects under the company GitHub Ogranization profile.
 * Of course, do not publish Intellectual Propety of our clients. Just public domain stuff.
 * Give a higher priority to these frequently appearing tasks:
   * Registration & Login
