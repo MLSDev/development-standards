@@ -43,10 +43,10 @@ We support:
     * iPhone 7, iPhone 7 Plus
     * iPhone SE
 * iPads:
-    * iPad 2, iPad 3, iPad 4
+    * iPad 2, iPad 3, iPad 4, iPad 5 gen
     * iPad Air, iPad Air 2
     * iPad Mini 1st generation, iPad Mini Retina
-    * iPad Pro 12.9 inch, 9.7 inch
+    * iPad Pro 12.9 inch, 9.7 inch, 10.5 inch.
 * iPods:
     * iPod 5th generation
     * iPod 6th generation
@@ -158,3 +158,4 @@ Use [Fabric](https://www.fabric.io) for crash logs. Install Fabric and follow th
 ## Useful links
 
 * [iOS Dev Weekly](https://iosdevweekly.com) - _worth to subscribe._
+* [Erica Sadun blog](http://ericasadun.com) - Interesting in-depth articles on various Swift topics.
