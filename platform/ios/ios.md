@@ -159,3 +159,4 @@ Use [Fabric](https://www.fabric.io) for crash logs. Install Fabric and follow th
 
 * [iOS Dev Weekly](https://iosdevweekly.com) - _worth to subscribe._
 * [Erica Sadun blog](http://ericasadun.com) - Interesting in-depth articles on various Swift topics.
+* [Swift weekly brief](https://swiftweekly.github.io)- Weekly updates on Swift development.
