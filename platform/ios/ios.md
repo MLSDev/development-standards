@@ -16,6 +16,7 @@
 1. [Crash Logs](#crash-logs)
 1. [Best Practices](#best-practices)
 1. [Distributing To AppStore](#distributing-to-appstore)
+1. [Useful Links](#useful-links)
 
 ## Supported OS Versions
 
@@ -153,3 +154,7 @@ Use [Fabric](https://www.fabric.io) for crash logs. Install Fabric and follow th
 * Update your [changelog](/common/git.md#changelog) with relevant changes
 * Merge `develop` branch to `master` branch
 * Create a [tag](/common/git.md#tags) in repository, that represents your Release
+
+## Useful links
+
+* [iOS Dev Weekly](https://iosdevweekly.com) - _worth to subscribe._
