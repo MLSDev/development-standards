@@ -143,7 +143,7 @@ _TBD_
 
 ## Load Testing
 
-* Use [Loader.io](https://loader.io)
+* We use Apache JMeter in strong collaboration with our QA Department.
 
 
 ## Load Balancing
