@@ -14,7 +14,6 @@
     * [Databases](#databases)
     * [Security](#security)
     * [Code Analysis And Metrics](#code-analysis-and-metrics)
-1. [Deployment](#deployment)
 1. [Load Balancing](#load-balancing)
 1. [Load Testing](#load-testing)
 1. [Useful Links](#useful-links)
@@ -24,7 +23,7 @@
 ## Technologies
 
 * Ruby 2.4.x (latest stable)
-* Ruby on Rails 5.0.x (latest stable)
+* Ruby on Rails 5.x (latest stable)
 * Ruby environment management: [rvm](http://rvm.io)
 
 
@@ -55,16 +54,16 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 ## Preferred Gems
 
-* [Puma](http://puma.io) as Ruby web server
+* [Puma](http://puma.io) as a Ruby web server
 * [Capistrano](http://capistranorb.com) for deployment
 * [Kaminari](https://github.com/amatsuda/kaminari) for pagination
-* [Draper](https://github.com/drapergem/draper) Decorators/View-Models for Rails Applications
-* [pundit](https://github.com/elabs/pundit) Minimal authorization through OO design and pure Ruby classes
+* [Draper](https://github.com/drapergem/draper) - Decorators/View-Models for Rails Applications
+* [pundit](https://github.com/elabs/pundit) - minimal authorization through OO design and pure Ruby classes
 * [dotenv](https://github.com/bkeepers/dotenv) for setting shell environment variables
 * [exception_notification](https://github.com/smartinez87/exception_notification) for error/exception notifications from server
-* [AppSignal](https://appsignal.com) better errors notification server with full debug information about each error
+* [AppSignal](https://appsignal.com) - better errors notification server with full debug information about each error
 * [swagger-blocks](https://github.com/fotinakis/swagger-blocks) for generating API documentation in [Swagger](http://swagger.io/specification/) format
-* [rack-timeout](https://github.com/heroku/rack-timeout) add timeouts to rack applications.
+* [rack-timeout](https://github.com/heroku/rack-timeout) - add timeouts to rack applications.
 * [rack-cors](https://github.com/cyu/rack-cors) for configuring CORS headers.
 * [lograge](https://github.com/roidrage/lograge) for production logs squshing.
 * [sidekiq](https://github.com/mperham/sidekiq) for background processing.
@@ -134,11 +133,6 @@ Here is a list of must-have gems:
 * [bullet](https://github.com/flyerhzm/bullet) - help to kill N+1 queries and unused eager loading
 
 _These tools are to be run at the end of each development cycle (Iteration, Sprint, Milestone, Release)_
-
-
-## Deployment
-
-_TBD_
 
 
 ## Load Testing
