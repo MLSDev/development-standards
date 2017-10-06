@@ -123,7 +123,7 @@ On the other hand, think twice before using the third-party component:
 
 Don't use frameworks, libraries, SDKs and other source code which is outdated or does not have active support community.
 
-For instance, don't use [CanCan](https://github.com/CanCanCommunity/cancancan) gem which is not supported anymore. Use [CanCanCan](https://github.com/CanCanCommunity/cancancan) instead.
+For instance, don't use [CanCan](https://github.com/ryanb/cancan) gem which is not supported anymore. Use [CanCanCan](https://github.com/CanCanCommunity/cancancan) instead.
 
 Another example. For Dependency Injection in Android, don't use outdated [Dagger 1](http://square.github.io/dagger), use [Dagger 2](http://google.github.io/dagger/) instead.
 

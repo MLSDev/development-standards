@@ -28,7 +28,7 @@ Check [Dashboard](http://developer.android.com/intl/ru/about/dashboards/index.ht
 
 ### Target SDK Version
 
-For new projects, use latest stable version of Android API (7.1.1 Nougat, API Level 25).
+For new projects, use latest stable version: Android 8.0 Oreo (API level 26).
 Do not use beta versions or developer previews.
 
 
@@ -156,3 +156,4 @@ Whenever ProGuard runs, it outputs a mapping.txt file, which shows you the origi
 ## Useful Links
 
 * [Android Weekly](http://androidweekly.net) - _subscribe to it!_
+* [Kotlin Weekly](http://www.kotlinweekly.net) - _subscribe to it!_
