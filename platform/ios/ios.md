@@ -127,10 +127,13 @@ Mocking Frameworks(Objective-C):
 * Access should be given to developers, testers, managers and client team
 * Apple's Testflight is preferred service for delivering beta builds
 * There should be several types of builds, each of them having specific environment, for example Staging build should work with Staging server, Production build should work with Production server.
+* There should be 4 CI jobs per app - one, that automatically runs tests on each pushed commit in every branch, one that compiles staging build when pushed to staging branch, one that makes production build on push to master branch, and one CI job, that refreshes DSYMS for Fabric. The last job should be run daily, all other events should be triggered by push event from git.
 
 ## Crash Logs
 
 Use [Fabric](https://www.fabric.io) for crash logs. Install Fabric and follow the instructions. Fabric and Crashlytics frameworks must be installed via `CocoaPods`.
+
+To provide Fabric symbolicated crash logs there should be a dedicated CI job, that runs daily, and uploads DSYMs from iTunesConnect to Fabric. Code to do that can be found on internal swift-snippets repo.
 
 ## Preferred libraries and frameworks
 
