@@ -22,26 +22,30 @@
 
 ### iOS 
 
-* iOS 9.0+
+* iOS 9.0+(iOS 9 deprecated, limited support only for old projects)
+* iOS 10.x+
 
 ### watchOS
 
-* watchOS 2.0+
+* watchOS 3.0+
 
 ### tvOS
 
-* tvOS 9.0+
+* tvOS 10.0+
 
 ## Supported Devices
 
 We support:
+
 * iPhones:
-    * iPhone 4S
-    * iPhone 5, iPhone 5C, iPhone 5S
+    * iPhone 4S(deprecated, support will be dropped soon)
+    * iPhone 5, iPhone 5c,iPhone 5S
     * iPhone 6, iPhone 6 Plus
     * iPhone 6s, iPhone 6s Plus
     * iPhone 7, iPhone 7 Plus
+    * iPhone 8, 8 Plus
     * iPhone SE
+    * iPhone X
 * iPads:
     * iPad 2, iPad 3, iPad 4, iPad 5 gen
     * iPad Air, iPad Air 2
@@ -55,12 +59,11 @@ We support:
 
 ### Programming Languages
 
-* Swift 3.0(preferred)
-* Objective-C
+* Swift 3.2/4.0
 
 ### IDE
 
-* Xcode 8+
+* Xcode 9+
 
 ### Other Tools
 
@@ -123,7 +126,7 @@ Mocking Frameworks(Objective-C):
 * Stable builds are made in the end of each development cycle (Iteration, Sprint, Milestone etc)
 * Access should be given to developers, testers, managers and client team
 * Apple's Testflight is preferred service for delivering beta builds
-* There should be 2 types of builds - _nightly_ and _stable_
+* There should be several types of builds, each of them having specific environment, for example Staging build should work with Staging server, Production build should work with Production server.
 
 ## Crash Logs
 
