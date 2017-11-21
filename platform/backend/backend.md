@@ -125,6 +125,7 @@ coverage/
 
 Here is a list of must-have gems:
 * [Brakeman](https://github.com/presidentbeef/brakeman) - A static analysis security vulnerability scanner for Ruby on Rails applications.
+* [bundler-audit](https://github.com/rubysec/bundler-audit) - Checks for vulnerable versions of gems in Gemfile.lock.
 * [SimpleCov](https://github.com/colszowka/simplecov) - Code Coverage tool for Ruby
 * [RuboCop](https://github.com/bbatsov/rubocop) - A static code analyzer, based on the community Ruby style guide
 * [rails_best_practices](https://github.com/railsbp/rails_best_practices) - Code metric tool for Rails projects
