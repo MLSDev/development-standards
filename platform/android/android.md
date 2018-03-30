@@ -96,7 +96,7 @@ Do not forget about OS temporary files (`.DS_Store` in Mac OS, `Thumbs.db` in Wi
 * [Dagger 2](http://google.github.io/dagger) for Dependency Injection
 * [RxJava](https://github.com/ReactiveX/RxJava) for asynchronous programming
 * Java [classes generator](http://www.jsonschema2pojo.org) by JSON scheme or JSON example. Compatible with Gson and Jackson
-
+* Java code coverage library by EclEmma - [JaCoCo](http://www.eclemma.org/jacoco/)
 
 ## Location
 
