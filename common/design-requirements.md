@@ -18,7 +18,7 @@ All the titles should be written in English and express their meaning. For insta
  
 ## iOS
 
-In case the application supports both landscape and portrait orientations, images need to be provided in all orientations. Design for landscape mode on iPhone can differ drastically from portrait, so it should be provided separately.
+In case the application supports both landscape and portrait orientations, images that fill entire or almost entire screen need to be provided in all orientations.
 
 UI controls (buttons, text fields, charts, ext.) need to be provided _without_ text drawn. At the same time font type and size need to be indicated in a project _Design Guidelines_ so that developer could be able to implement that font into UI.
 
@@ -31,11 +31,7 @@ Any text that will be shown in the app needs to be described separately. The fol
 
 Sizes of icons can be found here: 
 
-https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html
-
-Height and width of any image should be multiple of screen resolution:
-* 2x for Retina devices;
-* 3x for Retina HD devices (e.g. iPhone 6 Plus).
+https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/image-size-and-resolution/
 
 
 ### UI Controls
@@ -48,16 +44,19 @@ or
 * @2x.png, @3x.png (Adobe Photoshop) with alpha channel (without background), __without margins__.
 
 
+### Launch screens
+
+Guidelines on good launch screens can be found here:
+
+https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/launch-screen/
+
+If launch screen fills entire screen, AspectFill rendering mode should be used on iOS to maximize image content on screen. Best images to work with this pattern are images, that have most important content in their center and not important content on sides.
+
 ### Background Images
 
-For background images we support these resolutions: 
-* 640x960 - iPhone 4s
-* 640x1136 - iPhone 5, 5s
-* 750x1134 - iPhone 6
-* 1242x2208 - iPhone 6 Plus
-* 1536x2048 - iPad
+For background images we support the same resolutions as for launch screens: 
 
-http://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions
+https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/launch-screen/
 
 
 ## Android
