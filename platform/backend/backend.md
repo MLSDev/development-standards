@@ -22,7 +22,7 @@
 
 ## Technologies
 
-* Ruby 2.4.x (latest stable)
+* Ruby 2.5.x (latest stable)
 * Ruby on Rails 5.x (latest stable)
 * Ruby environment management: [rvm](http://rvm.io)
 
