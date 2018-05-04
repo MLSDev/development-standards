@@ -20,7 +20,7 @@
 * [yarn](https://yarnpkg.com/) package manager for Node.js
 * [bower](http://bower.io) package manager for web development _(deprecated; using in support projects)_
 * [AngularJS](https://angularjs.org) 1.5.х as main framework _(deprecated; using in support projects)_
-* [Angular](https://angular.io/) 4.x.x as main framework
+* [Angular](https://angular.io/) 5.x.x as main framework
 * [Pug](https://pugjs.org) - HTML template engine
 * [Stylus](http://stylus-lang.com/) - CSS preprocessor
 * [Gulp](http://gulpjs.com) - streaming build system _(deprecated; using in support projects)_
