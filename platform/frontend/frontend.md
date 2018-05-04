@@ -21,7 +21,7 @@
 * [bower](http://bower.io) package manager for web development _(deprecated; using in support projects)_
 * [AngularJS](https://angularjs.org) 1.5.х as main framework _(deprecated; using in support projects)_
 * [Angular](https://angular.io/) 5.x.x as main framework
-* [Pug](https://pugjs.orgm) - HTML template engine
+* [Pug](https://pugjs.org) - HTML template engine
 * [Stylus](http://stylus-lang.com/) - CSS preprocessor
 * [Gulp](http://gulpjs.com) - streaming build system _(deprecated; using in support projects)_
 * [Webpack](https://webpack.js.org/) 2.x.x - JavaScript module bundler
@@ -43,7 +43,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 * [JavaScript Style Guide](https://github.com/airbnb/javascript)
 * [Angular 1.x style guide](https://github.com/rwwagner90/angular-styleguide-es6) (good [article](https://www.sitepoint.com/writing-angularjs-apps-using-es6/))
-* [Angular 4.x style guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
+* [Angular 5.x style guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
 * [Stylus style guide](https://github.com/skyout/stylus-styleguide)
 
 
@@ -90,7 +90,7 @@ _This section is not finished yet._
 * Properly setup `robots.txt` file. See [robotstxt.org](http://www.robotstxt.org)
 * Generate `sitemap.xml` file. See [sitemaps.org](https://www.sitemaps.org)
 * Use [prerender.io](https://prerender.io)
-* Use tags: `h1...h6`, `p`, `meta`, `title` etc. 
+* Use tags: `h1...h6`, `p`, `meta`, `title` etc.
 
 
 ## Google Analytics & other third-party services
