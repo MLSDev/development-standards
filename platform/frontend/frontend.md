@@ -43,7 +43,7 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 * [JavaScript Style Guide](https://github.com/airbnb/javascript)
 * [Angular 1.x style guide](https://github.com/rwwagner90/angular-styleguide-es6) (good [article](https://www.sitepoint.com/writing-angularjs-apps-using-es6/))
-* [Angular 4.x style guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
+* [Angular 5.x style guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
 * [Stylus style guide](https://github.com/skyout/stylus-styleguide)
 
 
