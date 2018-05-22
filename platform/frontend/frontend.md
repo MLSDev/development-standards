@@ -77,10 +77,17 @@ Screen sizes:
 * Mobile min size: 320x480
 
 We support these web browsers:
-* Internet Explorer 11+
-* Latest Google Chrome
-* Latest Apple Safari
-* Latest Mozilla Firefox
+* Internet Explorer 11
+* Edge 16
+* Firefox 59
+* Chrome 64, 65, 66
+* Chrome for Android 66
+* Desktop Safari 11, 11.1
+* Mobile Safari 10.3, 11.2, 11.3
+* Opera 52
+* Android Browser 4.4
+* Samsung Internet 6.2
+* UC Browser for Android 11.8
 
 
 ## Search Engine Optimization
