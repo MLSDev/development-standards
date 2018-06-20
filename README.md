@@ -21,6 +21,7 @@
 1. [Version Numbering Conventions](/common/versioning.md)
 1. [Contributing](/CONTRIBUTING.md)
 1. [Open Source](/common/open-source.md)
+1. [Requirements](/common/requirements.md)
 
 ## License
 
