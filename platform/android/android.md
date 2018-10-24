@@ -22,7 +22,7 @@
 
 ### Min SDK Version
 
-Support Android OS versions starting from 4.2 (Jelly Bean, API Level 17). 
+Support Android OS versions starting from 4.4 (KitKat, API Level 19). 
 Do not support older versions (2.2 Froyo, 2.3 Gingerbread, 3.x Honeycomb, 4.0.3 - 4.0.4 Ice Cream Sandwich etc).
 Check [Dashboard](http://developer.android.com/intl/ru/about/dashboards/index.html) page for information about platform versions, screen sizes and densities statistics.
 
