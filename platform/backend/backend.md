@@ -89,8 +89,8 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 Useful gems: 
 * [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner)
-* [factory_girl_rails](https://github.com/thoughtbot/factory_girl_rails)
-* [has_scope](https://github.com/plataformatec/has_scope) Map incoming controller parameters to named scopes in your resources
+* [databse_rewinder](https://github.com/amatsuda/database_rewinder)
+* [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)
 
 ## .gitignore
 
