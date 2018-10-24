@@ -92,6 +92,7 @@ Useful gems:
 * [database_rewinder](https://github.com/amatsuda/database_rewinder)
 * [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)
 * [squasher](https://github.com/jalkoby/squasher)
+* [rpush](https://github.com/rpush/rpush)
 
 ## .gitignore
 
