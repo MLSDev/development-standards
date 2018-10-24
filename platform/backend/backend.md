@@ -89,8 +89,9 @@ We don’t use Windows as OS for development machines. We use latest Mac OS X or
 
 Useful gems: 
 * [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner)
-* [databse_rewinder](https://github.com/amatsuda/database_rewinder)
+* [database_rewinder](https://github.com/amatsuda/database_rewinder)
 * [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)
+* [squasher](https://github.com/jalkoby/squasher)
 
 ## .gitignore
 
