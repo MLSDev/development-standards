@@ -90,10 +90,10 @@ Do not forget about OS temporary files (`.DS_Store` in Mac OS, `Thumbs.db` in Wi
 
 * Use latest stable [Retrofit](http://square.github.io/retrofit/) to access RESTful web services
 * [OkHttp](http://square.github.io/okhttp/) for more flexible networking (for example, when the API is not RESTful)
-* [GSON](https://github.com/google/gson) for JSON serialization and parsing
+* [GSON](https://github.com/google/gson) or [Moshi](https://github.com/square/moshi) for JSON serialization and parsing
 * [Glide](https://github.com/bumptech/glide) or [Picasso](https://github.com/square/picasso) for image downloading, caching and displaying
 * [Crashlytics](https://try.crashlytics.com) for crash logs
-* [Dagger 2](http://google.github.io/dagger) for Dependency Injection
+* [Dagger 2](http://google.github.io/dagger) or [Koin](https://github.com/InsertKoinIO/koin) for Dependency Injection
 * [RxJava](https://github.com/ReactiveX/RxJava) for asynchronous programming
 * Java [classes generator](http://www.jsonschema2pojo.org) by JSON scheme or JSON example. Compatible with Gson and Jackson
 * Java code coverage library by EclEmma - [JaCoCo](http://www.eclemma.org/jacoco/)
