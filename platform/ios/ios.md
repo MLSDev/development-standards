@@ -78,10 +78,9 @@ We support:
 
 * Never revoke certificates yourself, ask Team Leader to do that if needed.
 * Use **manual** code-signing option in Xcode along with [Fastlane](https://github.com/fastlane/fastlane) to specify pair of code-signing certificate and provisioning profile.
-* Use MLSDev development certificate for running apps which do not use Push Notifications.
-* For testing Push Notifications use client's development certificate.
 * Follow [Provisioning Portal Naming Conventions](/platform/ios/provisioning-portal-naming-conventions.md) (profiles, certificates and devices)
 * Use [match](https://codesigning.guide) from [Fastlane](https://github.com/fastlane/fastlane) for generating development and distribution certificates as well as provisioning profiles. When generating certificates, specify not empty password, other way you won't be able to open certificate by tools like Knuff.
+* Use a single [match] repo with certificates for one developer account instead of creating repo for each app developed on an account.
 
 ## Dependency Management
 
