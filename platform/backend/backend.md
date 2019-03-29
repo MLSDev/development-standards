@@ -29,7 +29,7 @@
 
 ### Development OS
 
-We don’t use Windows as OS for development machines. We use latest Mac OS X or Ubuntu/Debian (long-term support releases are preferred).
+We don’t use Windows as OS for development machines. We use latest macOS or Ubuntu/Debian (long-term support releases are preferred).
 
 
 ### IDE
