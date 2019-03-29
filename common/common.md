@@ -27,9 +27,9 @@
 * Never use outdated components
 * Don’t reinvent the wheel
 * Check licenses of third-party components
-* Use industry standard technologies and and follow best practices for networking
+* Use industry standard technologies and follow best practices for networking
 * Use Git for source control
-* Use Jenkins for Continuous Integration
+* Use Jenkins or Gitlab CI for Continuous Integration
 * Track product versions
 * Perform Code Review on project start and on-going, once per two weeks
 
