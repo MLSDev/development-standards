@@ -68,6 +68,14 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 * [lograge](https://github.com/roidrage/lograge) for production logs squshing.
 * [sidekiq](https://github.com/mperham/sidekiq) for background processing.
 
+## Useful Gems
+
+* [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner)
+* [database_rewinder](https://github.com/amatsuda/database_rewinder)
+* [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)
+* [squasher](https://github.com/jalkoby/squasher)
+* [rpush](https://github.com/rpush/rpush)
+* [health_check](https://github.com/ianheggie/health_check)
 
 ## Coding Conventions
 
@@ -86,13 +94,6 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 * [rspec-activemodel-mocks](https://github.com/rspec/rspec-activemodel-mocks)
 * [rails-controller-testing](https://github.com/rails/rails-controller-testing)
 * [simplecov](https://github.com/colszowka/simplecov)
-
-Useful gems: 
-* [database_cleaner](https://github.com/DatabaseCleaner/database_cleaner)
-* [database_rewinder](https://github.com/amatsuda/database_rewinder)
-* [factory_bot_rails](https://github.com/thoughtbot/factory_bot_rails)
-* [squasher](https://github.com/jalkoby/squasher)
-* [rpush](https://github.com/rpush/rpush)
 
 ## .gitignore
 
