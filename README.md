@@ -41,4 +41,4 @@ Development Standards are maintained by MLSDev, Inc. We specialize in providing 
 Find out more [here][mlsdev] and don't hesitate to [contact us][contact]!
 
 [mlsdev]: http://mlsdev.com
-[contact]: http://mlsdev.com/contact_us
+[contact]: http://mlsdev.com/contact-us
