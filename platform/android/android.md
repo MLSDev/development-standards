@@ -55,12 +55,14 @@ Use Android Studio for auto formatting.
 
 ## Best Practices
 
+* Prefer Kotlin to Java for new projects
 * Avoid anonymous classes usage
 * Use `ContentProviders`
 * Use `SyncAdapters` (more info [here](http://habrahabr.ru/company/e-Legion/blog/206210/) and [here](http://habrahabr.ru/company/e-Legion/blog/216857/))
 * Prefer `Services` for long-running background tasks
 * Understand the difference between `Loader` and `AsyncTask`
 * Use _Analyse->Inspect Code_ in Android Studio for static analysis of project code and XML at the end of each development cycle (Iteration, Spring, Milestone etc)
+* Use MVVM architecture
 
 
 ## User Interface
@@ -97,11 +99,14 @@ Do not forget about OS temporary files (`.DS_Store` in Mac OS, `Thumbs.db` in Wi
 * [RxJava](https://github.com/ReactiveX/RxJava) for asynchronous programming
 * Java [classes generator](http://www.jsonschema2pojo.org) by JSON scheme or JSON example. Compatible with Gson and Jackson
 * Java code coverage library by EclEmma - [JaCoCo](http://www.eclemma.org/jacoco/)
+* Android [data binding](https://developer.android.com/topic/libraries/data-binding)
+
+
 
 ## Location
 
 Prefer [Google Play Services](https://developers.google.com/android/guides/setup) to `LocationManager`.
-More info can be found in this [blog post](http://mlsdev.com/blog/37).
+More info can be found in this [blog post](https://mlsdev.com/blog/37-how-to-work-with-geolocation-on-android-version-2).
 
 
 ## Dependency Management
