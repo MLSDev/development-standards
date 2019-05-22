@@ -105,6 +105,9 @@ database.yml
 secrets.yml
 .idea
 coverage/
+.env.development.local
+.env.test.local
+.env.production.local
 ```
 
 
