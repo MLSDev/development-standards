@@ -22,12 +22,12 @@
 
 ### iOS 
 
-* iOS 10.0+ (deprecated, limited support for old projects)
 * iOS 11.x+
+* iOS 12.x+
 
 ### watchOS
 
-* watchOS 3.0+
+* watchOS 4.0+
 
 ### tvOS
 
@@ -35,39 +35,20 @@
 
 ## Supported Devices
 
-We support:
-
-* iPhones:
-    * iPhone 5, iPhone 5c (deprecated, limited support for old projects)
-    * iPhone 5S
-    * iPhone 6, iPhone 6 Plus
-    * iPhone 6s, iPhone 6s Plus
-    * iPhone 7, iPhone 7 Plus
-    * iPhone 8, 8 Plus
-    * iPhone SE
-    * iPhone X
-    * iPhone XS, XR, XS Max
-* iPads:
-    * iPad 2, iPad 3, iPad 4 (deprecated, limited support for old projects)
-    * iPad 5 gen
-    * iPad(2017, 2018)
-    * iPad Air, iPad Air 2
-    * iPad Mini 1st generation, iPad Mini Retina
-    * iPad Pro 12.9 inch, 9.7 inch, 10.5 inch.
-* iPods:
-    * iPod 5th generation (deprecated, limited support for old projects)
-    * iPod 6th generation
+[List of supported devices for iOS 12](https://www.apple.com/lae/ios/ios-12/)
+[List of supported devices for iOS 11](https://support.apple.com/en-us/HT209574)
 
 ## Development Tools
 
 ### Programming Languages
 
-* Swift 3.4 / Swift 4.1 (deprecated, limited support for old projects)
+* Swift 5.0(preferred)
 * Swift 4.2
+* Swift 4.0
 
 ### IDE
 
-* Xcode 10+
+* Xcode 10.2+
 
 ### Other Tools
 
