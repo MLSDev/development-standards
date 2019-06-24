@@ -36,6 +36,7 @@
 ## Supported Devices
 
 [List of supported devices for iOS 12](https://www.apple.com/lae/ios/ios-12/)
+
 [List of supported devices for iOS 11](https://support.apple.com/en-us/HT209574)
 
 ## Development Tools
