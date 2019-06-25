@@ -94,7 +94,6 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 * [AASM](https://github.com/aasm/aasm) - State machines for Ruby classes.
 * [active_record_union](https://github.com/brianhempel/active_record_union) - UNIONs in ActiveRecord! Adds proper union and union_all methods to ActiveRecord::Relation.
 * [PaperTrail](https://github.com/paper-trail-gem/paper_trail) - PaperTrail lets you track changes to your models' data. It's good for auditing or versioning.
-* [paranoia](https://github.com/rubysherpas/paranoia) - ActiveRecord plugin allowing you to hide and restore records without actually deleting them.
 * [globalize](https://github.com/globalize/globalize) - Rails I18n de-facto standard library for ActiveRecord model/data translation.
 
 ### Abstraction
