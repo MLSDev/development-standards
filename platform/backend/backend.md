@@ -131,6 +131,7 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 
 ## Searching
 
+* [elasticsearch-rails](https://github.com/elastic/elasticsearch-rails)
 * [searchkick](https://github.com/ankane/searchkick) - Intelligent search made easy with Rails and Elasticsearch.
 * [pg_search](https://github.com/Casecommons/pg_search) - pg_search builds ActiveRecord named scopes that take advantage of PostgreSQL's full text search.
 
