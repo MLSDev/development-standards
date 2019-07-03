@@ -115,6 +115,10 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 
 * [letter_opener](https://github.com/ryanb/letter_opener) - Preview mail in the browser instead of sending.
 
+## Caching
+
+* [Dalli](https://github.com/petergoldstein/dalli) - A high performance pure Ruby client for accessing memcached servers.
+
 ## Decorators
 
 * [Draper](https://github.com/drapergem/draper) - Draper adds an object-oriented layer of presentation logic to your Rails application.
@@ -140,6 +144,7 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 * [Sidekiq](https://github.com/mperham/sidekiq) - Simple, efficient background processing for Ruby.
   * [sidekiq-scheduler](https://github.com/Moove-it/sidekiq-scheduler) - Lightweight job scheduler extension for Sidekiq.
   * [sidekiq-unique-jobs](https://github.com/platanus/activeadmin_addons) - Ensure uniqueness of your Sidekiq jobs.
+  * [sidekiq-batch](https://github.com/breamware/sidekiq-batch) - Simple Sidekiq Batch Job implementation.
 
 ## Environment Variables
 * [dotenv](https://github.com/bkeepers/dotenv) - For setting shell environment variables.
@@ -199,7 +204,7 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 ### Security
 
 * [brakeman](https://github.com/presidentbeef/brakeman) - Brakeman is a static analysis tool which checks Ruby on Rails applications for security vulnerabilities.
-* [bundle-audit](https://github.com/rubysec/bundler-audit) - bundler-audit is a patch-level verification tool for Bundler which checks for vulnerable versions of gems and insecure gem sources.
+* [bundler-audit](https://github.com/rubysec/bundler-audit) - bundler-audit is a patch-level verification tool for Bundler which checks for vulnerable versions of gems and insecure gem sources.
 
 ## Production
 
@@ -207,7 +212,6 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 * [Capistrano](https://github.com/capistrano/capistrano) - Remote multi-server automation tool.
 * [rack-timeout](https://github.com/heroku/rack-timeout) - Add timeouts to rack applications.
 * [Rack Attack](https://github.com/kickstarter/rack-attack) - Rack middleware to blocking & throttling.
-* [production_rails](https://github.com/ankane/production_rails) - Best practices for running Rails in production.
 * [newrelic_rpm](https://github.com/newrelic/rpm) - New Relic RPM Ruby Agent.
 
 ## Error Handling
@@ -232,8 +236,12 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 
 * [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide)
 * [Rails Style Guide](https://github.com/bbatsov/rails-style-guide)
+
+## Best Practices
 * [RSpec Best Practices](https://github.com/andreareginato/betterspecs)
 * [The Ultimate Guide to Ruby Timeouts](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts)
+* [Best practices for running Rails in production](https://github.com/ankane/production_rails)
+
 
 
 ## .gitignore
