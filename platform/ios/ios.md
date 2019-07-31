@@ -22,22 +22,20 @@
 
 ### iOS 
 
-* iOS 11.x+
 * iOS 12.x+
+* iOS 11.x (limited support for legacy projects)
 
 ### watchOS
 
-* watchOS 4.0+
+* watchOS 5.0+
 
 ### tvOS
 
-* tvOS 11.0+
+* tvOS 12.0+
 
 ## Supported Devices
 
 [List of supported devices for iOS 12](https://www.apple.com/lae/ios/ios-12/)
-
-[List of supported devices for iOS 11](https://support.apple.com/en-us/HT209574)
 
 ## Development Tools
 
