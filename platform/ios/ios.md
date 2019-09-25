@@ -22,8 +22,10 @@
 
 ### iOS 
 
-* iOS 12.x+
-* iOS 11.x (limited support for legacy projects)
+* iOS 13.*
+* iPadOS 13.*
+* iOS 12.*
+* iOS 11.* (limited support for legacy projects)
 
 ### watchOS
 
@@ -35,19 +37,19 @@
 
 ## Supported Devices
 
+[List of supported devices for iOS 13](https://www.apple.com/ios/ios-13/)
+[List of supported devices for iPadOS 13](https://www.apple.com/ipados/)
 [List of supported devices for iOS 12](https://www.apple.com/lae/ios/ios-12/)
 
 ## Development Tools
 
 ### Programming Languages
 
-* Swift 5.0(preferred)
-* Swift 4.2
-* Swift 4.0
+* Swift 5.1
 
 ### IDE
 
-* Xcode 10.2+
+* Xcode 11.*
 
 ### Other Tools
 
@@ -92,38 +94,41 @@ https://www.gitignore.io/api/swift
 Use [XCTest](https://developer.apple.com/library/ios/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html) for unit tests
 
 Matcher Frameworks:
-* [Nimble](https://github.com/Quick/Nimble) - Swift
-* [Expecta](https://github.com/specta/expecta) - Objective-C
 
-Mocking Frameworks(Objective-C):
-* [OCMock](https://github.com/erikdoe/ocmock)
-* [OCMockito](https://github.com/jonreid/OCMockito)
-* [OHHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs)
-* [KIF](https://github.com/kif-framework/KIF) for functional tests
+* [Nimble](https://github.com/Quick/Nimble)
+
+Dependency injection:
+* [Dip](https://github.com/AliSoftware/Dip)
 
 ## Automated Builds
 
-* Use [fastlane](https://github.com/KrauseFx/fastlane) for app building and submission
+* Use [fastlane](https://github.com/fastlane/fastlane) for app building and submission
 * Make schemes shared and commit them to repository
 * Before submitting build, all unit tests must pass. If even 1 test is failing, build should also fail
 * Stable builds are made in the end of each development cycle (Iteration, Sprint, Milestone etc)
 * Access should be given to developers, testers, managers and client team
 * Apple's Testflight is preferred service for delivering beta builds
 * There should be several types of builds, each of them having specific environment, for example Staging build should work with Staging server, Production build should work with Production server.
-* There should be 4 CI jobs per app - one, that automatically runs tests on each pushed commit in every branch, one that compiles staging build when pushed to staging branch, one that makes production build on push to master branch, and one CI job, that refreshes DSYMS for Fabric. The last job should be run daily, all other events should be triggered by push event from git.
+* There should be 4 CI jobs per app - one, that automatically runs tests on each pushed commit in every branch, one that compiles staging build when pushed to staging branch, one that makes production build on push to master branch, and one CI job, that refreshes DSYMS for Firebase Crashlytics. The last job should be run daily, all other events should be triggered by push event from git.
 
 ## Crash Logs
 
-Use [Fabric](https://www.fabric.io) for crash logs. Install Fabric and follow the instructions. Fabric and Crashlytics frameworks must be installed via `CocoaPods`.
+Use [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics) for crash logs. Install Fabric/Crashlytics/Firebase and follow the instructions. Fabric and Crashlytics frameworks must be installed via `CocoaPods`.
 
-To provide Fabric symbolicated crash logs there should be a dedicated CI job, that runs daily, and uploads DSYMs from iTunesConnect to Fabric. Code to do that can be found on internal swift-snippets repo.
+To provide Firebase Crashlytics symbolicated crash logs there should be a dedicated CI job, that runs daily, and uploads DSYMs from iTunesConnect to Firebase. Code to do that can be found on internal swift-snippets repo.
 
 ## Preferred libraries and frameworks
 
-* [AFNetworking](https://github.com/AFNetworking/AFNetworking) 2.x+ for networking - Objective-C
-* [EasyMapping](https://github.com/EasyMapping/EasyMapping) for JSON parsing - Objective-C
-* [Alamofire](https://github.com/Alamofire/Alamofire) + [AlamofireImage](https://github.com/Alamofire/AlamofireImage) + [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) for networking and parsing - Swift
+* [TRON](https://github.com/MLSDev/TRON) + [Codable](https://developer.apple.com/documentation/swift/codable) for network requests and parsing. If you need more flexible JSON parser, use [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON).
+* [DTTableViewManager](https://github.com/DenTelezhkin/DTTableViewManager) and [DTCollectionViewManager](https://github.com/DenTelezhkin/DTCollectionViewManager) for working with UITableView and UICollectionView.
+* [AlamofireImage](https://github.com/Alamofire/AlamofireImage) for working with images
 * [CoreData](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData) for app local database (TBD: links to useful articles, about background context for example)
+* [EasyMapping](https://github.com/EasyMapping/EasyMapping) for JSON parsing and CoreData - Objective-C
+
+## Code generation
+
+* [SwiftGen](https://github.com/SwiftGen/SwiftGen)
+* [Sourcery](https://github.com/krzysztofzablocki/Sourcery)
 
 ## Push notifications
 
@@ -134,14 +139,13 @@ To provide Fabric symbolicated crash logs there should be a dedicated CI job, th
 ## Best Practices
 
 * Create app user interface in Interface Builder, using XIBs or Storyboards. Custom UIView creation in a source code files is undesirable. Use [tools and frameworks](https://github.com/MLSDev/LoadableViews) to make your views small and reusable
-* Avoid big Storyboards. Split Storyboards into smaller ones. More than 7-8 ViewControllers in one Storyboard are unacceptable. Use Storyboard references in XCode 7 to refactor large storyboards into small ones.
+* Avoid big Storyboards. Split Storyboards into smaller ones. More than 7-8 ViewControllers in one Storyboard are unacceptable. Use Storyboard references in Xcode to refactor large storyboards into small ones.
 * Do not let UIViewController subclasses grow to more than 400 lines of code. Always try to keep them simple and short, preferably under 100 lines of code.
 
 ## Distributing To AppStore
 
 * Make sure, that your app works with correct server and API version
 * Update your [changelog](/common/git.md#changelog) with relevant changes
-* Merge `develop` branch to `master` branch
 * Create a [tag](/common/git.md#tags) in repository, that represents your Release
 
 ## Useful links
