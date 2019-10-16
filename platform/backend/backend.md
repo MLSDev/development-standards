@@ -114,6 +114,7 @@ We don’t use Windows as OS for development machines. We use latest macOS or Ub
 ## Email
 
 * [letter_opener](https://github.com/ryanb/letter_opener) - Preview mail in the browser instead of sending.
+* [email_address](https://github.com/afair/email_address) - Provides a ruby language library for working with email addresses.
 
 ## Caching
 
