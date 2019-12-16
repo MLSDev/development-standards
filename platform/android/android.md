@@ -22,13 +22,13 @@
 
 ### Min SDK Version
 
-Support Android OS versions starting from 4.4 (KitKat, API Level 19). 
+Support Android OS versions starting from 5.0 (Lollipop, API Level 21). 
 Do not support older versions (2.2 Froyo, 2.3 Gingerbread, 3.x Honeycomb, 4.0.3 - 4.0.4 Ice Cream Sandwich etc).
 Check [Dashboard](http://developer.android.com/intl/ru/about/dashboards/index.html) page for information about platform versions, screen sizes and densities statistics.
 
 ### Target SDK Version
 
-For new projects, use latest stable version: Android 9.0 Pie (API level 28).
+For new projects, use latest stable version: Android 10 (API level 29).
 Do not use beta versions or developer previews.
 
 
@@ -58,9 +58,8 @@ Use Android Studio for auto formatting.
 * Prefer Kotlin to Java for new projects
 * Avoid anonymous classes usage
 * Use `ContentProviders`
-* Use `SyncAdapters` (more info [here](http://habrahabr.ru/company/e-Legion/blog/206210/) and [here](http://habrahabr.ru/company/e-Legion/blog/216857/))
 * Prefer `Services` for long-running background tasks
-* Understand the difference between `Loader` and `AsyncTask`
+* Understand the difference between `RxJava` and `LiveData`
 * Use _Analyse->Inspect Code_ in Android Studio for static analysis of project code and XML at the end of each development cycle (Iteration, Spring, Milestone etc)
 * Use MVVM architecture
 
@@ -94,7 +93,7 @@ Do not forget about OS temporary files (`.DS_Store` in Mac OS, `Thumbs.db` in Wi
 * [OkHttp](http://square.github.io/okhttp/) for more flexible networking (for example, when the API is not RESTful)
 * [GSON](https://github.com/google/gson) or [Moshi](https://github.com/square/moshi) for JSON serialization and parsing
 * [Glide](https://github.com/bumptech/glide) or [Picasso](https://github.com/square/picasso) for image downloading, caching and displaying
-* [Crashlytics](https://try.crashlytics.com) for crash logs
+* [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics) for crash logs
 * [Dagger 2](http://google.github.io/dagger) or [Koin](https://github.com/InsertKoinIO/koin) for Dependency Injection
 * [RxJava](https://github.com/ReactiveX/RxJava) for asynchronous programming
 * Java [classes generator](http://www.jsonschema2pojo.org) by JSON scheme or JSON example. Compatible with Gson and Jackson
