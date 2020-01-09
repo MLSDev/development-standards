@@ -37,9 +37,9 @@
 
 ## Supported Devices
 
-[List of supported devices for iOS 13](https://www.apple.com/ios/ios-13/)
-[List of supported devices for iPadOS 13](https://www.apple.com/ipados/)
-[List of supported devices for iOS 12](https://www.apple.com/lae/ios/ios-12/)
+* [List of supported devices for iOS 13](https://www.apple.com/ios/ios-13/)
+* [List of supported devices for iPadOS 13](https://www.apple.com/ipados/)
+* [List of supported devices for iOS 12](https://en.wikipedia.org/wiki/IOS_12)
 
 ## Development Tools
 
