@@ -153,3 +153,4 @@ To provide Firebase Crashlytics symbolicated crash logs there should be a dedica
 * [iOS Dev Weekly](https://iosdevweekly.com) - _worth to subscribe._
 * [Erica Sadun blog](http://ericasadun.com) - Interesting in-depth articles on various Swift topics.
 * [Swift weekly brief](https://swiftweekly.github.io)- Weekly updates on Swift development.
+* [Swift by Sundell](https://www.swiftbysundell.com) - Good educational resource
