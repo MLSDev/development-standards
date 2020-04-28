@@ -69,7 +69,7 @@ Use these frameworks:
 * Keep in mind that desktop web site is not a mobile app
 * Keep in mind [300 milliseconds `onClick` delay](http://www.sitepoint.com/5-ways-prevent-300ms-click-delay-mobile-devices) in mobile devices' browsers
 * Be careful with finding npm packages for your project and follow these rules:
-  1. Check license.
+  1. [Check license](https://github.com/MLSDev/development-standards/blob/master/common/common.md#licenses).
   2. Evaluate indicators of quality, popularity and maintenance (good [resource](https://npms.io)).
   3. Check size of package for project bundle (good [resource](https://bundlephobia.com/)).
   4. Save dependencies without automatic a major version bump.
