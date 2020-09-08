@@ -9,6 +9,7 @@ This page describes people we always would love to join our team.
 
 ## General Personal Requirements
 
+* Bachelor's degree in Computer Science, or similar
 * Smart
 * Gets things done
 * Not a jerk
