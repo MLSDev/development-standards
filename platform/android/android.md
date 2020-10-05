@@ -55,9 +55,9 @@ Use Android Studio for auto formatting.
 
 * Prefer Kotlin to Java for new projects
 * Avoid anonymous classes usage
-* Use `ContentProviders`
-* Prefer `Services` for long-running background tasks
-* Understand `Coroutines` and `LiveData` usage. (https://developer.android.com/topic/libraries/architecture/coroutines)
+* Use [ContentProviders](https://developer.android.com/guide/topics/providers/content-providers)
+* Prefer [Services](https://developer.android.com/guide/components/services) for long-running background tasks
+* Understand [Coroutines](https://developer.android.com/topic/libraries/architecture/coroutines) and [LiveData](https://developer.android.com/topic/libraries/architecture/coroutines) usage. 
 * Use _Analyse->Inspect Code_ in Android Studio for static analysis of project code and XML at the end of each development cycle (Iteration, Spring, Milestone etc)
 * Use MVVM architecture
 
