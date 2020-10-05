@@ -92,8 +92,246 @@ Menu files do not need to be prefixed with the menu_ prefix. This is because the
 All resource file names should be plural, for example:
 
 	attrs.xml, strings.xml, styles.xml, colors.xml, dimens.xml
-	
-## Code Guidelines
+
+## XML Style Rules
+
+### Use self=-closing tags
+
+When a View in an XML layout does not have any child views, self-closing tags should be used.
+
+Do:
+
+
+    <ImageView
+        android:id="@+id/image_user"
+        android:layout_width="90dp"
+        android:layout_height="90dp" />
+
+Don’t:
+
+
+    <ImageView
+        android:id="@+id/image_user"
+        android:layout_width="90dp"
+        android:layout_height="90dp">
+    </ImageView>
+    
+    
+### Resource naming
+
+All resource names and IDs should be written using lowercase and underscores, for example:
+
+
+    text_username, activity_main, fragment_user, error_message_network_connection
+    
+The main reason for this is consistency, it also makes it easier to search for views within layout files when it comes to altering the contents of the file.
+    
+#### ID naming
+
+All IDs should be prefixed using the name of the element that they have been declared for. 
+
+| Element        | Prefix    |
+|----------------|-----------|
+| ImageView      | image_    |
+| Fragment       | fragment_ |
+| RelativeLayout | layout_   |
+| Button         | button_   |
+| TextView       | text_     |
+| View           | view_     |
+
+For example:
+
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+Views that typically are only one per layout, such as a toolbar, can simply be given the id of it's view type. E.g.```toolbar```.
+
+#### Strings
+
+All string names should begin with a prefix for the part of the application that they are being referenced from. For example:
+
+| Screen                | String         | Resource Name             |
+|-----------------------|----------------|---------------------------|
+| Registration Fragment | “Register now” | registration_register_now |
+| Sign Up Activity      | “Cancel”       | sign_up_cancel            |
+| Rate App Dialog       | “No thanks”    | rate_app_no_thanks        |
+
+If it’s not possible to name the referenced like the above, we can use the following rules:
+
+| Prefix  | Description                                  |
+|---------|----------------------------------------------|
+| error_  | Used for error messages                      |
+| title_  | Used for dialog titles                       |
+| action_ | Used for option menu actions                 |
+| msg_    | Used for generic message such as in a dialog |
+| label_  | Used for activity labels                     |
+
+Two important things to note for String resources:
+
+ - String resources should never be reused across screens. This can cause issues when it comes to changing a string for a specific screen. It saves future complications by having a single string for each screens usage.
+ 
+ - String resources should **always** be defined in the strings file and never hardcoded in layout or class files.
+
+#### Styles and themes
+
+When defining both Styles & Themes, they should be named using UpperCamelCase. For example:
+
+
+    AppTheme.DarkBackground.NoActionBar
+    AppTheme.LightBackground.TransparentStatusBar
+
+    ProfileButtonStyle
+    TitleTextStyle
+    
+    
+### Attributes ordering
+
+Ordering attributes not only looks tidy but it helps to make it quicker when looking for attributes within layout files. As a general rule, 
+
+
+1. View Id
+2. Style
+3. Layout width and layout height
+4. Other `layout_` attributes, sorted alphabetically
+5. Remaining attributes, sorted alphabetically
+
+For example:
+
+    <Button
+        android:id="@id/button_accept"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:padding="16dp"
+        android:text="@string/button_skip_sign_in"
+        android:textColor="@color/bluish_gray" />
+        
+Note: This formatting can be carried out by using the format feature in android studio - 
+
+`cmd + shift + L` 
+
+Doing this makes it easy to navigate through XML attributes when it comes to making changes to layout files.
+
+## Tests style rules
+
+### Unit tests
+
+Any Unit Test classes should be written to match the name of the class that the test are targeting, followed by the Test suffix. For example:
+
+| Class                | Test Class               |
+|----------------------|--------------------------|
+| DataManager          | DataManagerTest          |
+| UserProfilePresenter | UserProfilePresenterTest |
+| PreferencesHelper    | PreferencesHelperTest    |
+
+All Test methods should be annotated with the `@Test` annotation, the methods should be named using the following template:
+
+
+    @Test
+    public void methodNamePreconditionExpectedResult() { }
+
+So for example, if we want to check that the signUp() method with an invalid email address fails, the test would look like:
+
+
+    @Test
+    public void signUpWithInvalidEmailFails() { }
+
+Tests should focus on testing only what the method name entitles, if there’s extra conditions being tested in your Test method then this should be moved to it’s own individual test.
+
+If a class we are testing contains many different methods, then the tests should be split across multiple test classes - this helps to keep the tests more maintainable and easier to locate. For example, a DatabaseHelper class may need to be split into multiple test classes such as :
+
+
+    DatabaseHelperUserTest
+    DatabaseHelperPostsTest
+    DatabaseHelperDraftsTest
+
+### Espresso tests
+
+Each Espresso test class generally targets an Activity, so the name given to it should match that of the targeted Activity, again followed by Test. For example:
+
+| Class                | Test Class               |
+|----------------------|--------------------------|
+| MainActivity         | MainActivityTest         |
+| ProfileActivity      | ProfileActivityTest      |
+| DraftsActivity       | DraftsActivityTest       |
+
+When using the Espresso API, methods should be chained on new lines to make the statements more readable, for example:
+
+
+    onView(withId(R.id.text_title))
+            .perform(scrollTo())
+            .check(matches(isDisplayed()))
+            
+Chaining calls in this style not only helps us stick to less than 100 characters per line but it also makes it easy to read the chain of events taking place in espresso tests. 
+            
+
+## Gradle Style
+
+### Dependencies
+
+#### Versioning
+
+Where applicable, versioning that is shared across multiple dependencies should be defined as a variable within the dependencies scope. For example:
+
+
+    final SUPPORT_LIBRARY_VERSION = '23.4.0'
+    
+    compile "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:percent:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:customtabs:$SUPPORT_LIBRARY_VERSION"
+    
+This makes it easy to update dependencies in the future as we only need to change the version number once for multiple dependencies.
+
+#### Grouping
+
+Where applicable, dependencies should be grouped by package name, with spaces in-between the groups. For example:
+
+
+    compile "com.android.support:percent:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:customtabs:$SUPPORT_LIBRARY_VERSION"
+    
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'io.reactivex:rxjava:1.1.5'
+    
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.jakewharton.timber:timber:4.1.2'
+    
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+
+`compile` , `testCompile` and `androidTestCompile`  dependencies should also be grouped into their corresponding section. For example:
+
+
+    // App Dependencies
+    compile "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
+    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
+    
+    // Instrumentation test dependencies
+    androidTestCompile "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
+    
+    // Unit tests dependencies
+    testCompile 'org.robolectric:robolectric:3.0'
+
+Both of these approaches makes it easy to locate specific dependencies when required as it keeps dependency declarations both clean and tidy
+
+
+### Independent Dependencies
+
+Where dependencies are only used individually for application or test purposes, be sure to only compile them using `compile` , `testCompile` or `androidTestCompile` . For example, where the robolectric dependency is only required for unit tests, it should be added using:
+
+
+    testCompile 'org.robolectric:robolectric:3.0' 
+
+## Java Code Guidelines
 
 ### Never ignore exceptions
 
@@ -899,244 +1137,6 @@ When chaining Rx operations, every operator should be on a new line, breaking th
                 });
                 
 This makes it easier to understand the flow of operation within an Rx chain of calls.
-
-## XML Style Rules
-
-### Use self=-closing tags
-
-When a View in an XML layout does not have any child views, self-closing tags should be used.
-
-Do:
-
-
-    <ImageView
-        android:id="@+id/image_user"
-        android:layout_width="90dp"
-        android:layout_height="90dp" />
-
-Don’t:
-
-
-    <ImageView
-        android:id="@+id/image_user"
-        android:layout_width="90dp"
-        android:layout_height="90dp">
-    </ImageView>
-    
-    
-### Resource naming
-
-All resource names and IDs should be written using lowercase and underscores, for example:
-
-
-    text_username, activity_main, fragment_user, error_message_network_connection
-    
-The main reason for this is consistency, it also makes it easier to search for views within layout files when it comes to altering the contents of the file.
-    
-#### ID naming
-
-All IDs should be prefixed using the name of the element that they have been declared for. 
-
-| Element        | Prefix    |
-|----------------|-----------|
-| ImageView      | image_    |
-| Fragment       | fragment_ |
-| RelativeLayout | layout_   |
-| Button         | button_   |
-| TextView       | text_     |
-| View           | view_     |
-
-For example:
-
-
-    <TextView
-        android:id="@+id/text_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-
-Views that typically are only one per layout, such as a toolbar, can simply be given the id of it's view type. E.g.```toolbar```.
-
-#### Strings
-
-All string names should begin with a prefix for the part of the application that they are being referenced from. For example:
-
-| Screen                | String         | Resource Name             |
-|-----------------------|----------------|---------------------------|
-| Registration Fragment | “Register now” | registration_register_now |
-| Sign Up Activity      | “Cancel”       | sign_up_cancel            |
-| Rate App Dialog       | “No thanks”    | rate_app_no_thanks        |
-
-If it’s not possible to name the referenced like the above, we can use the following rules:
-
-| Prefix  | Description                                  |
-|---------|----------------------------------------------|
-| error_  | Used for error messages                      |
-| title_  | Used for dialog titles                       |
-| action_ | Used for option menu actions                 |
-| msg_    | Used for generic message such as in a dialog |
-| label_  | Used for activity labels                     |
-
-Two important things to note for String resources:
-
- - String resources should never be reused across screens. This can cause issues when it comes to changing a string for a specific screen. It saves future complications by having a single string for each screens usage.
- 
- - String resources should **always** be defined in the strings file and never hardcoded in layout or class files.
-
-#### Styles and themes
-
-When defining both Styles & Themes, they should be named using UpperCamelCase. For example:
-
-
-    AppTheme.DarkBackground.NoActionBar
-    AppTheme.LightBackground.TransparentStatusBar
-
-    ProfileButtonStyle
-    TitleTextStyle
-    
-    
-### Attributes ordering
-
-Ordering attributes not only looks tidy but it helps to make it quicker when looking for attributes within layout files. As a general rule, 
-
-
-1. View Id
-2. Style
-3. Layout width and layout height
-4. Other `layout_` attributes, sorted alphabetically
-5. Remaining attributes, sorted alphabetically
-
-For example:
-
-    <Button
-        android:id="@id/button_accept"
-        style="@style/ButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:padding="16dp"
-        android:text="@string/button_skip_sign_in"
-        android:textColor="@color/bluish_gray" />
-        
-Note: This formatting can be carried out by using the format feature in android studio - 
-
-`cmd + shift + L` 
-
-Doing this makes it easy to navigate through XML attributes when it comes to making changes to layout files.
-
-## Tests style rules
-
-### Unit tests
-
-Any Unit Test classes should be written to match the name of the class that the test are targeting, followed by the Test suffix. For example:
-
-| Class                | Test Class               |
-|----------------------|--------------------------|
-| DataManager          | DataManagerTest          |
-| UserProfilePresenter | UserProfilePresenterTest |
-| PreferencesHelper    | PreferencesHelperTest    |
-
-All Test methods should be annotated with the `@Test` annotation, the methods should be named using the following template:
-
-
-    @Test
-    public void methodNamePreconditionExpectedResult() { }
-
-So for example, if we want to check that the signUp() method with an invalid email address fails, the test would look like:
-
-
-    @Test
-    public void signUpWithInvalidEmailFails() { }
-
-Tests should focus on testing only what the method name entitles, if there’s extra conditions being tested in your Test method then this should be moved to it’s own individual test.
-
-If a class we are testing contains many different methods, then the tests should be split across multiple test classes - this helps to keep the tests more maintainable and easier to locate. For example, a DatabaseHelper class may need to be split into multiple test classes such as :
-
-
-    DatabaseHelperUserTest
-    DatabaseHelperPostsTest
-    DatabaseHelperDraftsTest
-
-### Espresso tests
-
-Each Espresso test class generally targets an Activity, so the name given to it should match that of the targeted Activity, again followed by Test. For example:
-
-| Class                | Test Class               |
-|----------------------|--------------------------|
-| MainActivity         | MainActivityTest         |
-| ProfileActivity      | ProfileActivityTest      |
-| DraftsActivity       | DraftsActivityTest       |
-
-When using the Espresso API, methods should be chained on new lines to make the statements more readable, for example:
-
-
-    onView(withId(R.id.text_title))
-            .perform(scrollTo())
-            .check(matches(isDisplayed()))
-            
-Chaining calls in this style not only helps us stick to less than 100 characters per line but it also makes it easy to read the chain of events taking place in espresso tests. 
-            
-
-## Gradle Style
-
-### Dependencies
-
-#### Versioning
-
-Where applicable, versioning that is shared across multiple dependencies should be defined as a variable within the dependencies scope. For example:
-
-
-    final SUPPORT_LIBRARY_VERSION = '23.4.0'
-    
-    compile "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:design:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:percent:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:customtabs:$SUPPORT_LIBRARY_VERSION"
-    
-This makes it easy to update dependencies in the future as we only need to change the version number once for multiple dependencies.
-
-#### Grouping
-
-Where applicable, dependencies should be grouped by package name, with spaces in-between the groups. For example:
-
-
-    compile "com.android.support:percent:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:customtabs:$SUPPORT_LIBRARY_VERSION"
-    
-    compile 'io.reactivex:rxandroid:1.2.0'
-    compile 'io.reactivex:rxjava:1.1.5'
-    
-    compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'com.jakewharton.timber:timber:4.1.2'
-    
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-
-
-`compile` , `testCompile` and `androidTestCompile`  dependencies should also be grouped into their corresponding section. For example:
-
-
-    // App Dependencies
-    compile "com.android.support:support-v4:$SUPPORT_LIBRARY_VERSION"
-    compile "com.android.support:recyclerview-v7:$SUPPORT_LIBRARY_VERSION"
-    
-    // Instrumentation test dependencies
-    androidTestCompile "com.android.support:support-annotations:$SUPPORT_LIBRARY_VERSION"
-    
-    // Unit tests dependencies
-    testCompile 'org.robolectric:robolectric:3.0'
-
-Both of these approaches makes it easy to locate specific dependencies when required as it keeps dependency declarations both clean and tidy
-
-
-### Independent Dependencies
-
-Where dependencies are only used individually for application or test purposes, be sure to only compile them using `compile` , `testCompile` or `androidTestCompile` . For example, where the robolectric dependency is only required for unit tests, it should be added using:
-
-
-    testCompile 'org.robolectric:robolectric:3.0' 
 
 ## Other
 
