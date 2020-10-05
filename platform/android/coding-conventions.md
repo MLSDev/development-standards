@@ -331,6 +331,8 @@ Where dependencies are only used individually for application or test purposes, 
 
     testCompile 'org.robolectric:robolectric:3.0' 
 
+## [Kotlin Code Conventions](https://kotlinlang.org/docs/reference/coding-conventions.html#coding-conventions-for-libraries)
+
 ## Java Code Guidelines
 
 ### Never ignore exceptions
