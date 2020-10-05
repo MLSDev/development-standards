@@ -28,7 +28,7 @@ Check [Dashboard](http://developer.android.com/intl/ru/about/dashboards/index.ht
 
 ### Target SDK Version
 
-For new projects, use latest stable version: Android 10 (API level 29).
+For new projects, use latest stable version: Android 11 (API level 30).
 Do not use beta versions or developer previews.
 
 
@@ -43,8 +43,6 @@ Use Java  Development Kit (JDK) [version 8](http://www.oracle.com/technetwork/ja
 ### IDE
 
 Use latest stable [Android Studio](http://developer.android.com/sdk/index.html).
-Migrate old projects from Eclipse and IntelliJ IDEA.
-
 
 ## Coding Conventions
 
@@ -59,7 +57,7 @@ Use Android Studio for auto formatting.
 * Avoid anonymous classes usage
 * Use `ContentProviders`
 * Prefer `Services` for long-running background tasks
-* Understand the difference between `RxJava` and `LiveData`
+* Understand `Coroutines` and `LiveData` usage. (https://developer.android.com/topic/libraries/architecture/coroutines)
 * Use _Analyse->Inspect Code_ in Android Studio for static analysis of project code and XML at the end of each development cycle (Iteration, Spring, Milestone etc)
 * Use MVVM architecture
 
@@ -95,11 +93,12 @@ Do not forget about OS temporary files (`.DS_Store` in Mac OS, `Thumbs.db` in Wi
 * [Glide](https://github.com/bumptech/glide) or [Picasso](https://github.com/square/picasso) for image downloading, caching and displaying
 * [Firebase Crashlytics](https://firebase.google.com/docs/crashlytics) for crash logs
 * [Dagger 2](http://google.github.io/dagger) or [Koin](https://github.com/InsertKoinIO/koin) for Dependency Injection
-* [RxJava](https://github.com/ReactiveX/RxJava) for asynchronous programming
-* Java [classes generator](http://www.jsonschema2pojo.org) by JSON scheme or JSON example. Compatible with Gson and Jackson
+* [Kotlin Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) for asynchronous programming
+* POJO JSON [classes generator](https://github.com/robohorse/RoboPOJOGenerator).
 * Java code coverage library by EclEmma - [JaCoCo](http://www.eclemma.org/jacoco/)
 * Android [data binding](https://developer.android.com/topic/libraries/data-binding)
-
+* [Flipper](https://fbflipper.com/), [Stetho](http://facebook.github.io/stetho/) debug tools
+* Kotlin plugins [Ktlint](https://github.com/pinterest/ktlint), [Detekt](https://github.com/detekt/detekt) 
 
 
 ## Location
