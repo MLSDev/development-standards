@@ -265,9 +265,8 @@ coverage/
 
 ### Databases
 
-* Use ActiveRecord ORM (scopes, enums, where with conditions, order etc) instead of raw SQL queries 
-* Design the database schema with [Vertabelo](http://www.vertabelo.com)
-* Keep your schema up-to-date with [Rails ERD](https://github.com/voormedia/rails-erd)
+* Use ActiveRecord ORM (scopes, enums, where with conditions, order etc) instead of raw SQL queries
+* You may want to keep your schema up-to-date with [Rails ERD](https://github.com/voormedia/rails-erd)
 
 
 ### Security
