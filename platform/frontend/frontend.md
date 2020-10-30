@@ -99,7 +99,6 @@ _This section is not finished yet._
 
 * Properly setup `robots.txt` file. See [robotstxt.org](http://www.robotstxt.org)
 * Generate `sitemap.xml` file. See [sitemaps.org](https://www.sitemaps.org)
-* Use [prerender.io](https://prerender.io)
 * Use tags: `h1...h6`, `p`, `meta`, `title` etc.
 
 
