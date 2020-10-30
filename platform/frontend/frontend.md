@@ -33,7 +33,8 @@ We don’t recommend use Windows as OS for development machines. We use latest M
 
 ## IDE
 
-* [WebStorm](https://www.jetbrains.com/webstorm) (not required)
+* [VSCode](https://code.visualstudio.com/)
+* [WebStorm](https://www.jetbrains.com/webstorm)
 
 
 ## Coding Conventions
