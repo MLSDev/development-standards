@@ -46,9 +46,7 @@ We don’t recommend use Windows as OS for development machines. We use latest M
 
 ## Unit testing
 
-Use these frameworks:
-* [Karma](http://karma-runner.github.io)
-* [Jasmine](http://jasmine.github.io)
+* [Jest](https://jestjs.io/)
 
 
 ## Preferred Libraries
