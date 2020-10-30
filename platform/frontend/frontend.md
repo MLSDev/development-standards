@@ -58,7 +58,7 @@ Use these frameworks:
 * [date-fns](https://date-fns.org/)
 * [normalize.css](https://github.com/necolas/normalize.css/)
 * [For Angular](./angular.md)
-* [For Vue.js](./vue.md)
+* [For Vue.js](./vuejs.md)
 
 
 ## Best Practices
