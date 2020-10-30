@@ -55,8 +55,10 @@ Use these frameworks:
 
 * [RxJS](https://github.com/ReactiveX/rxjs)
 * [Underscore](http://underscorejs.org) / [lodash](https://lodash.com)
-* [ng-file-upload](https://github.com/danialfarid/ng-file-upload) 12.x.x - Angular directive to upload files
-* [ngx-translate](http://www.ngx-translate.com) - The internationalization (i18n) library for Angular
+* [date-fns](https://date-fns.org/)
+* [normalize.css](https://github.com/necolas/normalize.css/)
+* [For Angular](./angular.md)
+* [For Vue.js](./vue.md)
 
 
 ## Best Practices
@@ -75,13 +77,8 @@ Use these frameworks:
 
 __Web sites that we develop should be *responsive and adaptive* by default.__
 
-#### Screen sizes:
-* Desktop min size: 1024x768
-* Mobile min size: 320x480
-
 #### We support these browsers:
 Desktop:
-* Internet Explorer 11
 * Edge - last 2 major versions
 * Firefox - last 2 major versions, ESR
 * Chrome - last 2 major versions
