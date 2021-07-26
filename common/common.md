@@ -1,6 +1,6 @@
 # Common
 
-This section otlines common guidelines and best practices for engineers of all specializations.
+This section outlines common guidelines and best practices for engineers of all specializations.
 
 ## In a nutshell
 
