@@ -1,37 +1,23 @@
 # Common
 
-1. [In a nutshell](#in-a-nutshell)
-1. [User Experience](#user-experience)
-1. [Error Handling](#error-handling)
-1. [Exception Handling](#exception-handling)
-1. [Personal Data Security](#personal-data-security)
-1. [Non-stable Components](#non-stable-components)
-1. [Deprecated API](#deprecated-api)
-1. [Don’t Reinvent the wheel](#dont-reinvent-the-wheel)
-1. [Don't Use Outdated Source Components](#dont-use-outdated-source-components)
-1. [Licenses](#licenses)
-1. [Networking](#networking)
-1. [Source Code Management](#source-code-management)
-1. [Continuous Integration](#continuous-integration)
-1. [Product Versioning](#product-versioning)
-1. [Code Review](#code-review)
-
+This section otlines common guidelines and best practices for engineers of all specializations.
 
 ## In a nutshell
 
-* Provide the best possible User Experience
-* Handle errors and exceptions carefully
-* Take user personal data security into account
-* Never use non-stable components in production code
-* Never use deprecated API
-* Never use outdated components
-* Don’t reinvent the wheel
-* Check licenses of third-party components
-* Use industry standard technologies and follow best practices for networking
-* Use Git for source control
-* Use Jenkins or Gitlab CI for Continuous Integration
-* Track product versions
-* Perform Code Review on project start and on-going, once per two weeks
+* Provide the best possible [User Experience](#user-experience)
+* Handle [errors](#error-handling) and [exceptions](#exception-handling) carefully
+* Take user [personal data security](#personal-data-security) into account
+* Never use [non-stable components](#non-stable-components) in production code
+* Never use [deprecated API](#deprecated-api) in production code
+* Never use [outdated components](#dont-use-outdated-source-components) that are no longer maintained
+* [Don’t reinvent the wheel](#dont-reinvent-the-wheel)
+* Check [licenses](#licenses) of third-party components
+* Use industry standard technologies and follow best practices for [networking](#networking)
+* Use Git for [source control](#source-code-management)
+* Use Gitlab CI for [Continuous Integration](#continuous-integration)
+* Track [product versions](#product-versioning)
+* Perform [Code Review](#code-review)
+* Use [Docker](#use-docker) when appropriate
 
 _Find more details about each point below._
 
@@ -244,3 +230,10 @@ Track product version numbers and keep them up-to-date. See [Versioning](/common
 Code Review should be performed for every project on regular basis.
 
 **Please read about our Code Review process [here](/common/code-review.md).**
+
+
+## Use Docker
+
+When appropriate, prefer to use Docker for development, staging and production environments.
+
+See [Docker](/common/docker.md) section for more information.
