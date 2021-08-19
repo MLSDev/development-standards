@@ -103,8 +103,7 @@ Do not forget about OS temporary files (`.DS_Store` in Mac OS, `Thumbs.db` in Wi
 
 ## Location
 
-Prefer [Google Play Services](https://developers.google.com/android/guides/setup) to `LocationManager`.
-More info can be found in this [blog post](https://mlsdev.com/blog/37-how-to-work-with-geolocation-on-android-version-2).
+Prefer [Google Play Services](https://developers.google.com/android/guides/setup) to `LocationManager`
 
 
 ## Dependency Management
