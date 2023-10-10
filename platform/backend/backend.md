@@ -46,9 +46,9 @@
 
 ## Technologies
 
-* Ruby 2.7.x (latest stable)
-* Ruby on Rails 5.x (latest stable)
-* Ruby environment management: [rvm](http://rvm.io)
+* Ruby 3.2.x (latest stable)
+* Ruby on Rails 7.x (latest stable)
+* Ruby environment management: [rvm](http://rvm.io) / [asdf](https://asdf-vm.com)
 
 
 ### Development OS
